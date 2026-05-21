@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: inherit !important;
+  caret-color: inherit !important;
+  transition: background-color 9999s ease-in-out 0s !important;
+}
+
+[data-prevent-flicker="true"] {
+  visibility: hidden;
+}
+
+[preloader] {
+  display: block;
+}
+
+@media screen and (orientation: landscape) and (max-width: 991px) {
+  .landscape-cover {
+    display: block;
+  }
+}
+
+.unset-all {
+  all: unset;
+}
+
+.class-name::-webkit-scrollbar {
+  display: none;
+}
+
+[svg="animated"] path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  visibility: hidden;
+}
+
+::-moz-selection {
+  color: var(--_colors---base-0--100);
+  background: var(--_colors---base-1000--100);
+}
+
+::selection {
+  color: var(--_colors---base-0--100);
+  background: var(--_colors---base-1000--100);
+}
+
+::-webkit-scrollbar {
+  width: 0em;
+  height: 0em;
+}
+
+::-webkit-scrollbar-button {
+  width: 0em;
+  height: 0em;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgba(255, 255, 255, 1);
+}
+
+#root {
+  min-height: 100%;
+}
