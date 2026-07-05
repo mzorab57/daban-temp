@@ -723,6 +723,9 @@ $$$$$$$$$$                    /////////          �
                 <div class="sky-bg">
                     <div class="sky-bg_hero">
                         <div class="img-w"><img alt="view from the airplane window" loading="eager" src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68bf31df0eb6b62331d8e35a_9557f7de34f540aa715092b1bcdbbf57_img_sky-hero.webp" class="img" /></div>
+                        <div class="mountain-parallax-container">
+                            <img id="piercing-mountain" src="/mountan.png" alt="Mountain" />
+                        </div>
                         <div class="sky-bg_hero_clouds">
                             <div class="sky-bg_hero_clouds_list">
                                 <div class="sky-bg_hero_clouds_list_item">
@@ -2162,7 +2165,7 @@ $$$$$$$$$$                    /////////          �
                                                                 <div hover="text" class="l1 text-base-500 is-2">The First The Last</div>
                                                             </div>
                                                         </a>
-                                                        <div data-json="https://pub-0b16d9d13b1345e190ead530877e618a.r2.dev/tftl-logo_white.json" class="tftl-lottie"></div>
+                                                        <div data-json="/tftl-logo-white.json" class="tftl-lottie"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2566,6 +2569,30 @@ $$$$$$$$$$                    /////////          �
                 "https://assets.slater.app/slater/16759.js?v=1.0";
 
             loadjeskojets3b3a66adf5d4465ba5beb2ab02e6cf8e(src);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const handleScroll = () => {
+                const mountain = document.getElementById("piercing-mountain");
+                if (!mountain) return;
+                const scrollY = window.scrollY;
+                
+                const startScroll = window.innerHeight * 0.1; 
+                const endScroll = startScroll + window.innerHeight; 
+                
+                let progress = 0;
+                if (scrollY >= startScroll) {
+                    progress = Math.min((scrollY - startScroll) / (endScroll - startScroll), 1);
+                }
+                
+                const yValue = 100 - (progress * 100);
+                mountain.style.transform = `translateY(${yValue}%)`;
+                mountain.style.opacity = progress;
+            };
+            
+            handleScroll();
+            window.addEventListener("scroll", handleScroll);
         });
     </script>
 </body>

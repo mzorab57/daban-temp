@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
-import SiteHead from "./SiteHead";
-import { loadSiteScripts } from "./loadSiteScripts";
-import bodyHtml from "./assets/body.html?raw";
-import "./siteStyles.css";
+import SiteHead from "./components/SiteHead";
+import { loadSiteScripts } from "./services/loadSiteScripts";
+import bodyHtml from "./templates/body.html?raw";
+import "./styles/siteStyles.css";
 
 function initWebflowClasses() {
   const html = document.documentElement;
@@ -25,6 +25,28 @@ export default function App() {
     if (!contentRef.current || scriptsLoaded.current) return;
     scriptsLoaded.current = true;
     loadSiteScripts().catch((err) => console.error("Site scripts failed:", err));
+
+    const handleScroll = () => {
+      const mountain = document.getElementById("piercing-mountain");
+      if (!mountain) return;
+      const scrollY = window.scrollY;
+      
+      const startScroll = window.innerHeight * 1; 
+      const endScroll = startScroll + window.innerHeight; 
+      
+      let progress = 0;
+      if (scrollY >= startScroll) {
+          progress = Math.min((scrollY - startScroll) / (endScroll - startScroll), 1);
+      }
+      
+      const yValue = 100 - (progress * 100);
+      mountain.style.transform = `translateY(${yValue}%)`;
+      mountain.style.opacity = progress;
+    };
+    
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
