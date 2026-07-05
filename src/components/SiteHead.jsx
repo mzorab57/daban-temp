@@ -132,6 +132,7 @@ export default function SiteHead() {
       <link rel="alternate" hrefLang="x-default" href="https://jeskojets.com/" />
       <link rel="alternate" hrefLang="en" href="https://jeskojets.com/" />
       <link rel="alternate" hrefLang="ru" href="https://jeskojets.com/ru" />
+      <link rel="preload" as="image" href="https://pub-8090965640ca4bd1b63bf23a3ab20377.r2.dev/object.webp" fetchpriority="high" />
       <meta
         name="description"
         content="Our aircraft are among the first to deliver clients to the most iconic international events. Among DS Jets’ clients are some of the world’s leading companies in the nuclear industry, as well as in the oil and banking sectors."
