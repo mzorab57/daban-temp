@@ -3,12 +3,12 @@ import { Helmet } from "react-helmet-async";
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Jesko Jets",
+  name: "Daban Holding",
   description:
-    "Jesko Jets is a private aviation operator with over 5,000 missions completed across 150+ countries. From international executives to global industries, our clients trust us to deliver on time, every time.",
+    "Daban Holding is a private aviation operator with over 5,000 missions completed across 150+ countries. From international executives to global industries, our clients trust us to deliver on time, every time.",
   foundingDate: "2013",
   founder: { "@type": "Person", name: "Evgeny Demidenko" },
-  url: "https://jeskojets.com",
+  url: "https://dabanholding.com",
   logo: {
     "@type": "ImageObject",
     url: "https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68fb29621db5bec757204250_bd047a5208d9d1f5339a58235598af09_section.svg",
@@ -26,11 +26,11 @@ const organizationSchema = {
   ],
   address: { "@type": "PostalAddress", addressLocality: "Dubai", addressCountry: "AE" },
   telephone: "+971544325050",
-  email: "info@jeskojets.com",
+  email: "info@dabanholding.com",
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+971544325050",
-    email: "info@jeskojets.com",
+    email: "info@dabanholding.com",
     contactType: "customer service",
     availableLanguage: "en",
     hoursAvailable: {
@@ -63,7 +63,7 @@ const organizationSchema = {
       name: "Private Jet Charter",
       description:
         "Global private aviation services with ultra-long-range aircraft",
-      provider: { "@type": "Organization", name: "Jesko Jets" },
+      provider: { "@type": "Organization", name: "Daban Holding" },
       areaServed: { "@type": "Place", name: "150+ countries worldwide" },
     },
     {
@@ -71,21 +71,21 @@ const organizationSchema = {
       name: "Pet Travel Services",
       description:
         "Traveling with pets on a private jet means comfort and peace of mind for both owners and their companions. Our dedicated team ensures seamless arrangements, from documentation and safety to onboard care.",
-      provider: { "@type": "Organization", name: "Jesko Jets" },
+      provider: { "@type": "Organization", name: "Daban Holding" },
     },
     {
       "@type": "Service",
       name: "24/7 Availability",
       description:
         "Our team is available around the clock to handle any request, no matter the time zone or urgency. From last-minute flight arrangements to personalized services, we provide seamless support whenever you need it.",
-      provider: { "@type": "Organization", name: "Jesko Jets" },
+      provider: { "@type": "Organization", name: "Daban Holding" },
     },
     {
       "@type": "Service",
       name: "Onboard Services",
       description:
         "Every flight is tailored with a range of personalized onboard services designed to elevate your journey. From fine dining and curated entertainment to attentive crew and seamless connectivity, every detail is arranged to ensure maximum comfort and enjoyment in the air.",
-      provider: { "@type": "Organization", name: "Jesko Jets" },
+      provider: { "@type": "Organization", name: "Daban Holding" },
     },
   ],
   owns: {
@@ -122,22 +122,22 @@ export default function SiteHead() {
     <Helmet
       htmlAttributes={{
         lang: "en",
-        "data-wf-domain": "jeskojets.com",
+        "data-wf-domain": "dabanholding.com",
         "data-wf-page": "68b57ef5ef86011d9b251e8a",
         "data-wf-site": "68b57ef5ef86011d9b251e8e",
       }}
     >
-      <title>Jesko Jets</title>
+      <title>Daban Holding</title>
       <link href="https://cdn.prod.website-files.com" rel="preconnect" crossOrigin="anonymous" />
-      <link rel="alternate" hrefLang="x-default" href="https://jeskojets.com/" />
-      <link rel="alternate" hrefLang="en" href="https://jeskojets.com/" />
-      <link rel="alternate" hrefLang="ru" href="https://jeskojets.com/ru" />
+      <link rel="alternate" hrefLang="x-default" href="https://dabanholding.com/" />
+      <link rel="alternate" hrefLang="en" href="https://dabanholding.com/" />
+      <link rel="alternate" hrefLang="ru" href="https://dabanholding.com/ru" />
       <link rel="preload" as="image" href="https://pub-8090965640ca4bd1b63bf23a3ab20377.r2.dev/object.webp" fetchpriority="high" />
       <meta
         name="description"
         content="Our aircraft are among the first to deliver clients to the most iconic international events. Among DS Jets’ clients are some of the world’s leading companies in the nuclear industry, as well as in the oil and banking sectors."
       />
-      <meta property="og:title" content="Jesko Jets" />
+      <meta property="og:title" content="Daban Holding" />
       <meta
         property="og:description"
         content="Our aircraft are among the first to deliver clients to the most iconic international events. Among DS Jets’ clients are some of the world’s leading companies in the nuclear industry, as well as in the oil and banking sectors."
@@ -146,7 +146,7 @@ export default function SiteHead() {
         property="og:image"
         content="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68dbce4d905aab5a30362299_img_og.avif"
       />
-      <meta name="twitter:title" content="Jesko Jets" />
+      <meta name="twitter:title" content="Daban Holding" />
       <meta
         name="twitter:description"
         content="Our aircraft are among the first to deliver clients to the most iconic international events. Among DS Jets’ clients are some of the world’s leading companies in the nuclear industry, as well as in the oil and banking sectors."

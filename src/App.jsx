@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import SiteHead from "./components/SiteHead";
+import Home from "./pages/Home";
 import { loadSiteScripts } from "./services/loadSiteScripts";
-import bodyHtml from "./templates/body.html?raw";
 import "./styles/siteStyles.css";
 
 function initWebflowClasses() {
@@ -14,7 +14,6 @@ function initWebflowClasses() {
 }
 
 export default function App() {
-  const contentRef = useRef(null);
   const scriptsLoaded = useRef(false);
 
   useEffect(() => {
@@ -22,7 +21,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    if (!contentRef.current || scriptsLoaded.current) return;
+    if (scriptsLoaded.current) return;
     scriptsLoaded.current = true;
     loadSiteScripts().catch((err) => console.error("Site scripts failed:", err));
 
@@ -31,7 +30,7 @@ export default function App() {
       if (!mountain) return;
       const scrollY = window.scrollY;
       
-      const startScroll = window.innerHeight * 1; 
+      const startScroll = window.innerHeight * 0.1; 
       const endScroll = startScroll + window.innerHeight; 
       
       let progress = 0;
@@ -41,10 +40,14 @@ export default function App() {
       
       const yValue = 100 - (progress * 100);
       mountain.style.transform = `translateY(${yValue}%)`;
-      mountain.style.opacity = progress;
+      mountain.style.opacity = progress.toString();
     };
     
-    handleScroll();
+    // Use setTimeout to ensure DOM has rendered
+    setTimeout(() => {
+        handleScroll();
+    }, 100);
+    
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -52,11 +55,9 @@ export default function App() {
   return (
     <>
       <SiteHead />
-      <div
-        ref={contentRef}
-        className="body"
-        dangerouslySetInnerHTML={{ __html: bodyHtml }}
-      />
+      <div className="body">
+        <Home />
+      </div>
     </>
   );
 }

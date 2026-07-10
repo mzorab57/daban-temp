@@ -1,6 +1,6 @@
-# Jesko Jets (React + Vite)
+# Daban Holding (React + Vite)
 
-React port of the Jesko Jets Webflow site, ready for [Vercel](https://vercel.com) deployment.
+React port of the Daban Holding Webflow site, ready for [Vercel](https://vercel.com) deployment.
 
 ## Changes from original `index.html`
 
