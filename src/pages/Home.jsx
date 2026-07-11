@@ -21,19 +21,19 @@ export default function Home() {
         <div className="theme_on-color">
           <Header />
         </div>
-        <div className="main-wrapper">
+        <div bg="color" className="intro_scroll-area">
           <Hero />
           <About />
           <GhosteSection />
           <SkyBackground />
-          <Flight />
-          <FlightMobile />
-          <Benefits />
-          <Data />
-          <Global />
-          <StyleBlock />
-          <LandscapeCover />
         </div>
+        <Flight />
+        <FlightMobile />
+        <Benefits />
+        <Data />
+        <Global />
+        <LandscapeCover />
+        <StyleBlock />
       </div>
     </div>
   );

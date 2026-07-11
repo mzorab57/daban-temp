@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function FlightMobile() {
   return (
     <section id="flight-m" bg="light" className="section b-mobile">
@@ -123,8 +121,8 @@ export default function FlightMobile() {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="w-node-_1b7ad1cd-848a-9004-75f6-f9919e2ee49d-9e2ee473" className="spec-s_center"><img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9baf6224ae03a0c240aad_img_jet-blue-print.avif" loading="eager" alt="Blueprint layout of a private jet interior showing seats, a bed, tables, and sinks."
-                                        className="blueprint b-desktop" /><img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9bcdd5313e51b91eb59c9_img_m_jet-blue-print.avif" loading="eager" alt="Blueprint layout of a private jet interior showing seats, a bed, tables, and sinks."
+                                <div id="w-node-_1b7ad1cd-848a-9004-75f6-f9919e2ee49d-9e2ee473" className="spec-s_center"><img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9baf6224ae03a0c240aad_img_jet-blue-print.avif" loading="lazy" decoding="async" alt="Blueprint layout of a private jet interior showing seats, a bed, tables, and sinks."
+                                        className="blueprint b-desktop" /><img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9bcdd5313e51b91eb59c9_img_m_jet-blue-print.avif" loading="lazy" decoding="async" alt="Blueprint layout of a private jet interior showing seats, a bed, tables, and sinks."
                                         className="blueprint b-mobile" />
                                     <div className="style-css w-embed">
                                         <style dangerouslySetInnerHTML={{ __html: `

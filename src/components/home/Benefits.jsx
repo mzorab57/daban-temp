@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Benefits() {
   return (
     <section id="benefits" bg="light" className="section">
@@ -46,8 +44,8 @@ export default function Benefits() {
                                                                 </div>
                                                                 <div className="b-mobile">
                                                                     <div className="unit-24"></div>
-                                                                    <div className="benefits-card_desc_img">
-                                                                        <div className="img"><img alt="Pets" loading="eager" src="https://cdn.prod.website-files.com/68b5ebb0b83342b0b2bbd5ee/68d9a3daa04c725a21d89d3f_img_benefits-2.webp" className="img-p" /></div>
+                                                                        <div className="benefits-card_desc_img">
+                                                                        <div className="img"><img alt="Pets" loading="lazy" decoding="async" src="https://cdn.prod.website-files.com/68b5ebb0b83342b0b2bbd5ee/68d9a3daa04c725a21d89d3f_img_benefits-2.webp" className="img-p" /></div>
                                                                     </div>
                                                                 </div>
                                                                 <div className="unit-24"></div>
@@ -79,7 +77,7 @@ export default function Benefits() {
                                                                 <div className="b-mobile">
                                                                     <div className="unit-24"></div>
                                                                     <div className="benefits-card_desc_img">
-                                                                        <div className="img"><img alt="24/7 availability" loading="eager" src="https://cdn.prod.website-files.com/68b5ebb0b83342b0b2bbd5ee/68d9a43945c6f790cee01dd3_img_benefits-3.webp" className="img-p" /></div>
+                                                                        <div className="img"><img alt="24/7 availability" loading="lazy" decoding="async" src="https://cdn.prod.website-files.com/68b5ebb0b83342b0b2bbd5ee/68d9a43945c6f790cee01dd3_img_benefits-3.webp" className="img-p" /></div>
                                                                     </div>
                                                                 </div>
                                                                 <div className="unit-24"></div>
@@ -111,7 +109,7 @@ export default function Benefits() {
                                                                 <div className="b-mobile">
                                                                     <div className="unit-24"></div>
                                                                     <div className="benefits-card_desc_img">
-                                                                        <div className="img"><img alt="Onboard services" loading="eager" src="https://cdn.prod.website-files.com/68b5ebb0b83342b0b2bbd5ee/68e923fd81c2d3933a1661f7_img_benefit-3.webp" className="img-p" /></div>
+                                                                        <div className="img"><img alt="Onboard services" loading="lazy" decoding="async" src="https://cdn.prod.website-files.com/68b5ebb0b83342b0b2bbd5ee/68e923fd81c2d3933a1661f7_img_benefit-3.webp" className="img-p" /></div>
                                                                     </div>
                                                                 </div>
                                                                 <div className="unit-24"></div>
@@ -143,7 +141,7 @@ export default function Benefits() {
                                                                 <div className="b-mobile">
                                                                     <div className="unit-24"></div>
                                                                     <div className="benefits-card_desc_img">
-                                                                        <div className="img"><img alt="Efficient" loading="eager" src="https://cdn.prod.website-files.com/68b5ebb0b83342b0b2bbd5ee/68e9240bc0c8bd03a98e8c97_img_benefit-4.webp" className="img-p" /></div>
+                                                                        <div className="img"><img alt="Efficient" loading="lazy" decoding="async" src="https://cdn.prod.website-files.com/68b5ebb0b83342b0b2bbd5ee/68e9240bc0c8bd03a98e8c97_img_benefit-4.webp" className="img-p" /></div>
                                                                     </div>
                                                                 </div>
                                                                 <div className="unit-24"></div>
@@ -162,22 +160,22 @@ export default function Benefits() {
                                         <div role="list" className="benefits-media-cms_list w-dyn-items">
                                             <div benefits-media-item="pets" role="listitem" className="benefits-media-cms_list_item w-dyn-item">
                                                 <div benefits-img-w="pets" className="benefits-media">
-                                                    <div benefits-img="pets" parallax="w" className="img-w"><img parallax="img" alt="Pets" src="https://cdn.prod.website-files.com/68b5ebb0b83342b0b2bbd5ee/68d9a3daa04c725a21d89d3f_img_benefits-2.webp" loading="eager" className="img-p" /></div>
+                                                    <div benefits-img="pets" parallax="w" className="img-w"><img parallax="img" alt="Pets" src="https://cdn.prod.website-files.com/68b5ebb0b83342b0b2bbd5ee/68d9a3daa04c725a21d89d3f_img_benefits-2.webp" loading="lazy" decoding="async" className="img-p" /></div>
                                                 </div>
                                             </div>
                                             <div benefits-media-item="24-7-availability" role="listitem" className="benefits-media-cms_list_item w-dyn-item">
                                                 <div benefits-img-w="24-7-availability" className="benefits-media">
-                                                    <div benefits-img="24-7-availability" parallax="w" className="img-w"><img parallax="img" alt="24/7 availability" src="https://cdn.prod.website-files.com/68b5ebb0b83342b0b2bbd5ee/68d9a43945c6f790cee01dd3_img_benefits-3.webp" loading="eager" className="img-p" /></div>
+                                                    <div benefits-img="24-7-availability" parallax="w" className="img-w"><img parallax="img" alt="24/7 availability" src="https://cdn.prod.website-files.com/68b5ebb0b83342b0b2bbd5ee/68d9a43945c6f790cee01dd3_img_benefits-3.webp" loading="lazy" decoding="async" className="img-p" /></div>
                                                 </div>
                                             </div>
                                             <div benefits-media-item="onboard-services" role="listitem" className="benefits-media-cms_list_item w-dyn-item">
                                                 <div benefits-img-w="onboard-services" className="benefits-media">
-                                                    <div benefits-img="onboard-services" parallax="w" className="img-w"><img parallax="img" alt="Onboard services" src="https://cdn.prod.website-files.com/68b5ebb0b83342b0b2bbd5ee/68e923fd81c2d3933a1661f7_img_benefit-3.webp" loading="eager" className="img-p" /></div>
+                                                    <div benefits-img="onboard-services" parallax="w" className="img-w"><img parallax="img" alt="Onboard services" src="https://cdn.prod.website-files.com/68b5ebb0b83342b0b2bbd5ee/68e923fd81c2d3933a1661f7_img_benefit-3.webp" loading="lazy" decoding="async" className="img-p" /></div>
                                                 </div>
                                             </div>
                                             <div benefits-media-item="efficient" role="listitem" className="benefits-media-cms_list_item w-dyn-item">
                                                 <div benefits-img-w="efficient" className="benefits-media">
-                                                    <div benefits-img="efficient" parallax="w" className="img-w"><img parallax="img" alt="Efficient" src="https://cdn.prod.website-files.com/68b5ebb0b83342b0b2bbd5ee/68e9240bc0c8bd03a98e8c97_img_benefit-4.webp" loading="eager" className="img-p" /></div>
+                                                    <div benefits-img="efficient" parallax="w" className="img-w"><img parallax="img" alt="Efficient" src="https://cdn.prod.website-files.com/68b5ebb0b83342b0b2bbd5ee/68e9240bc0c8bd03a98e8c97_img_benefit-4.webp" loading="lazy" decoding="async" className="img-p" /></div>
                                                 </div>
                                             </div>
                                         </div>

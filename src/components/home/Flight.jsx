@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Flight() {
   return (
     <section id="flight" bg="light" className="section clip">
@@ -166,8 +164,8 @@ export default function Flight() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div id="w-node-_1b7ad1cd-848a-9004-75f6-f9919e2ee49d-9e2ee473" className="spec-s_center"><img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9baf6224ae03a0c240aad_img_jet-blue-print.avif" loading="eager" alt="Blueprint layout of a private jet interior showing seats, a bed, tables, and sinks."
-                                                    className="blueprint b-desktop" /><img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9bcdd5313e51b91eb59c9_img_m_jet-blue-print.avif" loading="eager" alt="Blueprint layout of a private jet interior showing seats, a bed, tables, and sinks."
+                                            <div id="w-node-_1b7ad1cd-848a-9004-75f6-f9919e2ee49d-9e2ee473" className="spec-s_center"><img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9baf6224ae03a0c240aad_img_jet-blue-print.avif" loading="lazy" decoding="async" alt="Blueprint layout of a private jet interior showing seats, a bed, tables, and sinks."
+                                                    className="blueprint b-desktop" /><img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9bcdd5313e51b91eb59c9_img_m_jet-blue-print.avif" loading="lazy" decoding="async" alt="Blueprint layout of a private jet interior showing seats, a bed, tables, and sinks."
                                                     className="blueprint b-mobile" />
                                                 <div className="style-css w-embed">
                                                     <style dangerouslySetInnerHTML={{ __html: `
@@ -336,7 +334,7 @@ export default function Flight() {
                                 ` }} />
                             </div>
                         </div>
-                        <div className="jet"><img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/69834ca922d650666343a7a4_img_jet.webp" loading="eager" alt="Jet gulfstream 650ER" className="img-jet" />
+                        <div className="jet"><img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/69834ca922d650666343a7a4_img_jet.webp" loading="lazy" decoding="async" alt="Jet gulfstream 650ER" className="img-jet" />
                             <div className="style-css w-embed">
                                 <style dangerouslySetInnerHTML={{ __html: `
                                     .img-jet {
