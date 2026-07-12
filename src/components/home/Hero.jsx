@@ -22,7 +22,7 @@ export default function Hero() {
                                             <div hero-s_left="" id="w-node-fca5a1c1-2abc-b0f2-d9a4-068c5d568a3f-9b251e8a" className="hero-s_bot_desc f-desktop">
                                                 <div className="grid _6-columns">
                                                     <div id="w-node-_48cf72cc-74cf-d039-2207-aa612fc8b12d-9b251e8a" className="hero-s_bot_desc_title">
-                                                        <h2 data-prevent-flicker="true" data-line-reveal="true" className="p5 text-light">Your <br/>freedom to enjoy life</h2>
+                                                        {/* <h2 data-prevent-flicker="true" data-line-reveal="true" className="p5 text-light">Your <br/>freedom to enjoy life</h2> */}
                                                     </div>
                                                 </div>
                                                 <div data-prevent-flicker="true" data-div-reveal="true" className="line-divider-w">
@@ -32,7 +32,7 @@ export default function Hero() {
                                                 </div>
                                                 <div className="grid _6-columns">
                                                     <div id="w-node-_5c05abfb-41cf-d7d3-44c6-33625de3235a-9b251e8a" className="hero-s_bot_desc_w">
-                                                        <p data-prevent-flicker="true" data-line-reveal="true" className="p7 text-light">Every flight is designed around your comfort, time, and ambitions — so you can focus on what truly matters, while we take care of everything else.</p>
+                                                        <p data-prevent-flicker="true" data-line-reveal="true" className="p7 text-light">A diversified group specializing in construction, trading, and transportation, with over 25 years of experience delivering local and international projects across the Kurdistan Region and Iraq.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -42,7 +42,8 @@ export default function Hero() {
                                                 <div className="hero-s_bot_scroll_cont">
                                                     <div className="hero-s_bot_scroll_cont_item">
                                                         <div className="ico_scroll_c">
-                                                            <div play="true" data-json="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d5aa6c275b70e82b936ed8_ico_scroll.json" className="ico_scroll"></div>
+                                                            <div play="true" 
+                                                            data-json="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d5aa6c275b70e82b936ed8_ico_scroll.json" className="ico_scroll"></div>
                                                         </div>
                                                         <a href="#about" pop-up-close="" hover="link" pop-up-open="" className="link w-inline-block">
                                                             <div className="link_label">
@@ -52,7 +53,7 @@ export default function Hero() {
                                                         </a>
                                                     </div>
                                                     <div className="hero-s_bot_scroll_cont_item">
-                                                        <div className="l1 text-light">To start the journey</div>
+                                                        <div className="l1 text-light">Trusted since 1997</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -76,10 +77,14 @@ export default function Hero() {
                                         <div className="hero-w_bg_window_w">
                                             <div className="hero-w_bg_window_c">
                                                 <div preloader-knob-c="" className="hero-w_bg_window_knob_">
-                                                    <div preloader-knob-2="" className="hero-w_bg_window_knob-2"><img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2.webp" loading="lazy" sizes="(max-width: 1680px) 100vw, 1680px" srcset="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2-p-500.webp 500w, https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2-p-800.webp 800w, https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2-p-1080.webp 1080w, https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2.webp 1680w"
-                                                            alt="" className="img_knob" /></div>
-                                                    <div className="hero-w_bg_window_knob"><img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob.webp" loading="lazy" sizes="(max-width: 1680px) 100vw, 1680px" srcset="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob-p-500.webp 500w, https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob-p-800.webp 800w, https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob-p-1080.webp 1080w, https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob.webp 1680w"
-                                                            alt="" className="img_knob" /></div>
+                                                    <div preloader-knob-2="" className="hero-w_bg_window_knob-2">
+                                                        <img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2.webp" loading="lazy" sizes="(max-width: 1680px) 100vw, 1680px" srcset="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2-p-500.webp 500w, https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2-p-800.webp 800w, https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2-p-1080.webp 1080w, https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2.webp 1680w"
+                                                            alt="" className="img_knob" />
+                                                            </div>
+                                                    <div className="hero-w_bg_window_knob">
+                                                        <img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob.webp" loading="lazy" sizes="(max-width: 1680px) 100vw, 1680px" srcset="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob-p-500.webp 500w, https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob-p-800.webp 800w, https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob-p-1080.webp 1080w, https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob.webp 1680w"
+                                                            alt="" className="img_knob" />
+                                                            </div>
                                                 </div>
                                                 <div preloader-window-c="" className="hero-w_bg_window_bg_">
                                                     <div className="hero-w_bg_window_bg"></div>

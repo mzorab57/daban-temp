@@ -47,7 +47,7 @@ export default function App() {
       const rect = scene.getBoundingClientRect();
       const revealStart = viewportHeight * 1.02;
       const revealEnd = viewportHeight * 0.34;
-      const restingOffset = isMobile ? -60 : -66;
+      const restingOffset = isMobile ? -70 : -16;
       const scale = isMobile ? 1.7 : 1;
       const progress = clamp(
         (revealStart - rect.top) / (revealStart - revealEnd),
