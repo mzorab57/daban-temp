@@ -9,7 +9,7 @@ export default function About() {
                                 <div className="unit-96"></div>
                                 <div data-div-reveal="true" id="w-node-c6cefa80-f7b3-f3f7-eec7-08a3529fc895-9b251e8a" className="about-s_lead-text">
                                     <div className="about-s_lead-text_c">
-                                        <h2 data-highlight-text="" className="p2 text-light">Daban Holding<sup>®</sup> is a private aviation operator with over 5,000 missions completed across 150+ countries. From international executives to global industries, our clients trust us to deliver on time, every time.</h2>
+                                        <h2 data-highlight-text="" className="p2 text-light">Daban Group is a diversified company specializing in construction, trading, and logistics. Founded in 1997 by Mr. Sarhad Jawad Arif, the company has built a strong reputation over more than 25 years.  </h2>
                                     </div>
                                 </div>
                                 <div className="unit-96"></div>
@@ -42,7 +42,7 @@ export default function About() {
                                                     <div className="features-card">
                                                         <div className="grid _6-columns">
                                                             <div id="w-node-_06e69526-4f69-b49d-a75f-33cea968bf93-9b251e8a" className="features-card_title">
-                                                                <h3 className="p5 text-light">Direct Access to Private Travel</h3>
+                                                                <h3 className="p5 text-light">Construction &amp; General Trading</h3>
                                                             </div>
                                                         </div>
                                                         <div className="line-divider-w">
@@ -52,8 +52,10 @@ export default function About() {
                                                         </div>
                                                         <div className="grid _6-columns">
                                                             <div id="w-node-_6de0a208-6e63-26f8-4500-85407bc90938-9b251e8a" className="features-card_desc">
-                                                                <p className="p7 text-light">Fly beyond boundaries with Daban Holding. Our global operations ensure seamless, personalized travel experiences — from the first call to landing. Every journey is tailored to your comfort,
-                                                                    privacy, and schedule.</p>
+                                                                <p className="p7 text-light">
+                                                                    {/* Building the Future, Delivering Value<br/><br/> */}
+                                                                   Delivering high-quality construction projects and trusted trading solutions across diverse industries.
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -62,7 +64,7 @@ export default function About() {
                                                     <div className="features-card">
                                                         <div className="grid _6-columns">
                                                             <div id="w-node-_06e69526-4f69-b49d-a75f-33cea968bf93-9b251e8a" className="features-card_title">
-                                                                <h3 className="p5 text-light">Your Freedom to Enjoy Life</h3>
+                                                                <h3 className="p5 text-light">Firefighting Solutions</h3>
                                                             </div>
                                                         </div>
                                                         <div className="line-divider-w">
@@ -72,7 +74,10 @@ export default function About() {
                                                         </div>
                                                         <div className="grid _6-columns">
                                                             <div id="w-node-_6de0a208-6e63-26f8-4500-85407bc90938-9b251e8a" className="features-card_desc">
-                                                                <p className="p7 text-light">We value your time above all. Daban Holding gives you the freedom to live, work, and relax wherever life takes you — without compromise.</p>
+                                                                <p className="p7 text-light">
+                                                                    {/* Protecting Lives and Assets<br/><br/> */}
+                                                                   Providing advanced fire protection systems and safety solutions that meet international standards.
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -81,7 +86,7 @@ export default function About() {
                                                     <div className="features-card">
                                                         <div className="grid _6-columns">
                                                             <div id="w-node-_06e69526-4f69-b49d-a75f-33cea968bf93-9b251e8a" className="features-card_title">
-                                                                <h3 className="p5 text-light">Precision and Excellence</h3>
+                                                                <h3 className="p5 text-light">Robot Trading</h3>
                                                             </div>
                                                         </div>
                                                         <div className="line-divider-w">
@@ -91,8 +96,10 @@ export default function About() {
                                                         </div>
                                                         <div className="grid _6-columns">
                                                             <div id="w-node-_6de0a208-6e63-26f8-4500-85407bc90938-9b251e8a" className="features-card_desc">
-                                                                <p className="p7 text-light">Each detail of your flight — from route planning to in-flight service — reflects our dedication to perfection. Our crew and fleet meet the highest global standards, ensuring reliability in
-                                                                    every mission.</p>
+                                                                <p className="p7 text-light">
+                                                                    {/* Driving Innovation Through Technology<br/><br/> */}
+                                                                   Supplying innovative robotic technologies that enhance automation and industrial performance.
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -101,7 +108,7 @@ export default function About() {
                                                     <div className="features-card">
                                                         <div className="grid _6-columns">
                                                             <div id="w-node-_06e69526-4f69-b49d-a75f-33cea968bf93-9b251e8a" className="features-card_title">
-                                                                <h3 className="p5 text-light">Global Reach, Personal Touch</h3>
+                                                                <h3 className="p5 text-light">Partnerships &amp; Cooperations</h3>
                                                             </div>
                                                         </div>
                                                         <div className="line-divider-w">
@@ -111,7 +118,10 @@ export default function About() {
                                                         </div>
                                                         <div className="grid _6-columns">
                                                             <div id="w-node-_6de0a208-6e63-26f8-4500-85407bc90938-9b251e8a" className="features-card_desc">
-                                                                <p className="p7 text-light">With access to destinations in over 150 countries, Daban Holding brings the world closer to you. Our experts manage every aspect of your flight, guaranteeing a smooth and effortless journey.</p>
+                                                                <p className="p7 text-light">
+                                                                    {/* Building Strong Partnerships<br/><br/> */}
+                                                                  Creating strategic partnerships with local and international organizations to drive sustainable growth.
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>

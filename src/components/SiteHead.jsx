@@ -5,9 +5,9 @@ const organizationSchema = {
   "@type": "Organization",
   name: "Daban Holding",
   description:
-    "Daban Holding is a private aviation operator with over 5,000 missions completed across 150+ countries. From international executives to global industries, our clients trust us to deliver on time, every time.",
-  foundingDate: "2013",
-  founder: { "@type": "Person", name: "Evgeny Demidenko" },
+    "Daban Group is a diversified company specializing in construction, trading, and logistics. Founded in 1997 by Mr. Sarhad Jawad Arif, the company has built a strong reputation over more than 25 years. Today, Daban Group is recognized as one of the largest and most reputable companies in the Kurdistan Region, with a proven track record of excellence in construction, commercial activities, and logistics services.",
+  foundingDate: "1997",
+  founder: { "@type": "Person", name: "Sarhad Jawad Arif" },
   url: "https://dabanholding.com",
   logo: {
     "@type": "ImageObject",
