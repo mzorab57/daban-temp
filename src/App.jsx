@@ -34,8 +34,6 @@ export default function App() {
     let settleTimerId = 0;
 
     const updateMountainParallax = () => {
-      frameId = 0;
-
       const mountain = document.getElementById("piercing-mountain");
       const scene = document.getElementById("sky-bg-hero");
 
@@ -60,44 +58,79 @@ export default function App() {
       mountain.style.opacity = progress.toFixed(3);
     };
 
-    const requestMountainParallaxUpdate = () => {
+    const updateFlightSequence = () => {
+      const section = document.getElementById("flight");
+      const fire = document.getElementById("flight-fire");
+      const drone = document.getElementById("flight-drone");
+      const tanki = document.getElementById("flight-tanki");
+
+      if (!section || !fire || !drone || !tanki) return;
+
+      const viewportHeight = window.innerHeight || 1;
+      const rect = section.getBoundingClientRect();
+      const overall = clamp(
+        (viewportHeight - rect.top) / Math.max(rect.height + viewportHeight * 0.85, 1),
+        0,
+        1
+      );
+      const segmentProgress = (start, end) =>
+        clamp((overall - start) / Math.max(end - start, 0.001), 0, 1);
+
+      const fireProgress = segmentProgress(0.0, 0.16);
+      const droneProgress = segmentProgress(0.24, 0.42);
+      const tankiProgress = segmentProgress(0.52, 0.72);
+
+      fire.style.opacity = "1";
+      fire.style.transform = `translate3d(0, ${20 - fireProgress * 20}%, 0)`;
+
+      drone.style.opacity = droneProgress.toFixed(3);
+      drone.style.transform = `translate3d(${-20 + droneProgress * 20}%, ${12 - droneProgress * 12}%, 0)`;
+
+      tanki.style.opacity = tankiProgress.toFixed(3);
+      tanki.style.transform = `translate3d(${18 - tankiProgress * 18}%, ${12 - tankiProgress * 12}%, 0)`;
+    };
+
+    const updateSceneEffects = () => {
+      frameId = 0;
+      updateMountainParallax();
+      updateFlightSequence();
+    };
+
+    const requestSceneEffectsUpdate = () => {
       if (frameId) return;
-      frameId = window.requestAnimationFrame(updateMountainParallax);
+      frameId = window.requestAnimationFrame(updateSceneEffects);
     };
 
     // Webflow/Slater scripts continue adjusting layout right after mount.
     // Run a few startup syncs so refreshing mid-page does not leave the mountain hidden.
-    const syncMountainParallax = () => {
-      requestMountainParallaxUpdate();
-      followUpTimerId = window.setTimeout(requestMountainParallaxUpdate, 250);
-      settleTimerId = window.setTimeout(requestMountainParallaxUpdate, 800);
+    const syncSceneEffects = () => {
+      requestSceneEffectsUpdate();
+      followUpTimerId = window.setTimeout(requestSceneEffectsUpdate, 250);
+      settleTimerId = window.setTimeout(requestSceneEffectsUpdate, 800);
     };
 
     loadSiteScripts()
       .catch((err) => console.error("Site scripts failed:", err))
-      .finally(syncMountainParallax);
+      .finally(syncSceneEffects);
 
-    initTimerId = window.setTimeout(syncMountainParallax, 100);
+    initTimerId = window.setTimeout(syncSceneEffects, 100);
 
-    window.addEventListener("scroll", requestMountainParallaxUpdate, {
+    window.addEventListener("scroll", requestSceneEffectsUpdate, {
       passive: true,
     });
-    window.addEventListener("resize", requestMountainParallaxUpdate);
-    window.addEventListener("orientationchange", requestMountainParallaxUpdate);
-    window.addEventListener("load", syncMountainParallax);
+    window.addEventListener("resize", requestSceneEffectsUpdate);
+    window.addEventListener("orientationchange", requestSceneEffectsUpdate);
+    window.addEventListener("load", syncSceneEffects);
 
     return () => {
       window.clearTimeout(initTimerId);
       window.clearTimeout(followUpTimerId);
       window.clearTimeout(settleTimerId);
       if (frameId) window.cancelAnimationFrame(frameId);
-      window.removeEventListener("scroll", requestMountainParallaxUpdate);
-      window.removeEventListener("resize", requestMountainParallaxUpdate);
-      window.removeEventListener(
-        "orientationchange",
-        requestMountainParallaxUpdate
-      );
-      window.removeEventListener("load", syncMountainParallax);
+      window.removeEventListener("scroll", requestSceneEffectsUpdate);
+      window.removeEventListener("resize", requestSceneEffectsUpdate);
+      window.removeEventListener("orientationchange", requestSceneEffectsUpdate);
+      window.removeEventListener("load", syncSceneEffects);
     };
   }, []);
 

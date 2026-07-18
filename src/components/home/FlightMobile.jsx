@@ -11,9 +11,9 @@ export default function FlightMobile() {
                                 <div id="w-node-_1b7ad1cd-848a-9004-75f6-f9919e2ee478-9e2ee473" className="spec-s_left">
                                     <div className="spec-s_left_top">
                                         <div className="unit-12"></div>
-                                        <div className="p5">Gulfstream</div>
+                                        <div className="p5 tw-hidden lg:tw-block">New</div>
                                         <div className="unit-24"></div>
-                                        <div className="h2">650ER</div>
+                                        <div className="h2 tw-hidden lg:tw-block">ZSDRONE</div>
                                     </div>
                                     <div className="spec-s_left_bot b-desktop">
                                         <div className="spec-s_item">
@@ -122,8 +122,9 @@ export default function FlightMobile() {
                                     </div>
                                 </div>
                                 <div id="w-node-_1b7ad1cd-848a-9004-75f6-f9919e2ee49d-9e2ee473" className="spec-s_center"><img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9baf6224ae03a0c240aad_img_jet-blue-print.avif" loading="lazy" decoding="async" alt="Blueprint layout of a private jet interior showing seats, a bed, tables, and sinks."
-                                        className="blueprint b-desktop" /><img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9bcdd5313e51b91eb59c9_img_m_jet-blue-print.avif" loading="lazy" decoding="async" alt="Blueprint layout of a private jet interior showing seats, a bed, tables, and sinks."
-                                        className="blueprint b-mobile" />
+                                        className="blueprint b-desktop" />
+                                        <img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9bcdd5313e51b91eb59c9_img_m_jet-blue-print.avif" loading="lazy" decoding="async" alt="Blueprint layout of a private jet interior showing seats, a bed, tables, and sinks."
+                                        className="blueprint b-mobile tw-hidden lg:tw-block" />
                                     <div className="style-css w-embed">
                                         <style dangerouslySetInnerHTML={{ __html: `
                                             .blueprint {
@@ -149,7 +150,7 @@ export default function FlightMobile() {
                                         <div className="unit-12"></div>
                                         <div className="grid _6-columns">
                                             <div id="w-node-_1b7ad1cd-848a-9004-75f6-f9919e2ee4a2-9e2ee473" className="spec-s_right_top_title">
-                                                <h2 className="p5">Ultra-long-range Aircraft</h2>
+                                                <h2 className="p5">Quality Products</h2>
                                             </div>
                                         </div>
                                         <div className="unit-96"></div>
@@ -158,18 +159,18 @@ export default function FlightMobile() {
                                             <div className="unit-12"></div>
                                             <div className="grid _6-columns">
                                                 <div id="w-node-_1b7ad1cd-848a-9004-75f6-f9919e2ee4aa-9e2ee473" className="spec-s_right_top_desc_title">
-                                                    <h3 className="l1">Direct Access to Private Travel</h3>
+                                                    <h3 className="l1">Trusted Global Partners</h3>
                                                 </div>
                                             </div>
                                             <div className="unit-36"></div>
                                             <div className="grid _6-columns">
                                                 <div id="w-node-_1b7ad1cd-848a-9004-75f6-f9919e2ee4af-9e2ee473" className="spec-s_right_top_desc_w">
-                                                    <p className="p7">A true time-saving machine it brings Tokyo and New York an hour closer, and at 92% of the speed of sound, it can circle the globe with just a single stop.</p>
+                                                    <p className="p7">Partnering with globally recognized brands, Daban Holding delivers innovative solutions in firefighting, drone technology, and water storage systems, combining quality, performance, and reliability to meet the demands of modern industries.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="spec-s_left_bot b-mobile">
+                                    {/* <div className="spec-s_left_bot b-mobile">
                                         <div className="unit-96"></div>
                                         <div className="spec-s_item">
                                             <div className="line-h"></div>
@@ -225,7 +226,7 @@ export default function FlightMobile() {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            // </div>
                                         </div>
                                         <div className="unit-24"></div>
                                         <div className="spec-s_item">
@@ -274,7 +275,7 @@ export default function FlightMobile() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div className="unit-36 b-desktop"></div>
