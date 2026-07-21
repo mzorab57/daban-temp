@@ -3,7 +3,7 @@ import React from 'react';
 export default function Data() {
   return (
     <section id="data" bg="light" className="section">
-                <div className="container">
+                {/* <div className="container">
                     <div className="data-w">
                         <div className="data-s">
                             <div className="unit-24"></div>
@@ -39,7 +39,7 @@ export default function Data() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </section>
   );
 }

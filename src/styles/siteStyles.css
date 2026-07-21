@@ -161,7 +161,7 @@ select:-webkit-autofill {
 }
 
 .light-bg {
-    background: linear-gradient(180deg, #6c6c6c 0%, #FFF8ED  100%);
+    background: linear-gradient(180deg, #f7f8f9 0%, #FFF8ED  100%);
 }
 .sky-bg_about_grad-over {
     background: linear-gradient(180deg, #015AA9 0%, #8FC2D7 50%, #FFF8ED 100%);
@@ -171,7 +171,7 @@ select:-webkit-autofill {
 }
 
 .dark-bg {
-    background: linear-gradient(180deg, #312726 0%, #2D2423 11.79%, #292120 21.38%, #251E1D 29.12%, #211A1A 35.34%, #1D1716 40.37%, #181313 44.56%, #141010 48.24%, #100D0C 51.76%, #0C0A0A 55.44%, #090707 59.63%, #060505 64.66%, #030303 70.88%, #020101 78.62%, #000 88.21%, #000 100%);
+    background: linear-gradient(180deg, #6095D2 0%, #4D6EA3 11.79%, #214C9A 21.38%, #112D6B 29.12%, #0A142C 35.34%, #0A142C 40.37%, #0A142C 44.56%, #0A142C 48.24%, #0A142C 51.76%, #0A142C 55.44%, #0A142C 59.63%, #0A142C 64.66%, #0A142C 70.88%, #0A142C 78.62%, #0A142C 88.21%, #0A142C 100%);
 }
 
 @media screen and (max-width: 991px) {

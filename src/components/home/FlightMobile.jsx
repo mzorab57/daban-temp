@@ -11,9 +11,9 @@ export default function FlightMobile() {
                                 <div id="w-node-_1b7ad1cd-848a-9004-75f6-f9919e2ee478-9e2ee473" className="spec-s_left">
                                     <div className="spec-s_left_top">
                                         <div className="unit-12"></div>
-                                        <div className="p5 tw-hidden lg:tw-block">New</div>
+                                        <div className="p5 tw-hidden lg:tw-block"></div>
                                         <div className="unit-24"></div>
-                                        <div className="h2 tw-hidden lg:tw-block">ZSDRONE</div>
+                                        <div className="h2 tw-hidden lg:tw-block tw-text-deep-blue">ZSDRONE</div>
                                     </div>
                                     <div className="spec-s_left_bot b-desktop">
                                         <div className="spec-s_item">
@@ -24,16 +24,16 @@ export default function FlightMobile() {
                                                     <div id="w-node-_1b7ad1cd-848a-9004-75f6-f9919e2ee486-9e2ee473" role="listitem" className="jet-overview-cms_list_item w-dyn-item">
                                                         <div className="jet-overview-card">
                                                             <div className="l1-item">
-                                                                <div data-sqm="" className="l1 text-gray">Maximum operating range</div>
-                                                                <div data-sqm="" className="l1">11,263 km</div>
+                                                                <div data-sqm="" className="l1 tw-text-deep-blue">Maximum operating range</div>
+                                                                <div data-sqm="" className="l1 tw-text-deep-blue">11,263 km</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div id="w-node-_1b7ad1cd-848a-9004-75f6-f9919e2ee486-9e2ee473" role="listitem" className="jet-overview-cms_list_item w-dyn-item">
                                                         <div className="jet-overview-card">
                                                             <div className="l1-item">
-                                                                <div data-sqm="" className="l1 text-gray">Speed</div>
-                                                                <div data-sqm="" className="l1">480 knots</div>
+                                                                <div data-sqm="" className="l1 tw-text-deep-blue">Speed</div>
+                                                                <div data-sqm="" className="l1 tw-text-deep-blue">480 knots</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -150,7 +150,7 @@ export default function FlightMobile() {
                                         <div className="unit-12"></div>
                                         <div className="grid _6-columns">
                                             <div id="w-node-_1b7ad1cd-848a-9004-75f6-f9919e2ee4a2-9e2ee473" className="spec-s_right_top_title">
-                                                <h2 className="p5">Quality Products</h2>
+                                                <h2 className="p5 tw-text-deep-blue">Quality Products</h2>
                                             </div>
                                         </div>
                                         <div className="unit-96"></div>
@@ -159,7 +159,7 @@ export default function FlightMobile() {
                                             <div className="unit-12"></div>
                                             <div className="grid _6-columns">
                                                 <div id="w-node-_1b7ad1cd-848a-9004-75f6-f9919e2ee4aa-9e2ee473" className="spec-s_right_top_desc_title">
-                                                    <h3 className="l1">Trusted Global Partners</h3>
+                                                    <h3 className="l1 tw-text-deep-blue">Trusted Global Partners</h3>
                                                 </div>
                                             </div>
                                             <div className="unit-36"></div>

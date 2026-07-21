@@ -55,17 +55,17 @@ useEffect(() => {
                                 <div className="jet-s">
                                     <div className="jet-s_top"></div>
                                     <div className="jet-s_title">
-                                        <h2 className="h-hiden">Fly the Legacy</h2>
-                                        <div data-char-reveal="true" className="h1">Main</div>
+                                        <h2 className="h-hiden tw-text-deep-blue">Fly the Legacy</h2>
+                                        <div data-char-reveal="true" className="h1 tw-text-deep-blue">Main</div>
                                         <div className="jet-s_title_divider b-desktop"></div>
                                         <div className="jet-s_title_push current b-desktop"></div>
-                                        <div data-char-reveal="true" className="h1 a-right">Product</div>
+                                        <div data-char-reveal="true" className="h1 a-right tw-text-deep-blue">Product</div>
                                     </div>
                                     <div className="jet-s_bot">
                                         <div className="grid fill mobile">
                                             <div id="w-node-a343ec6b-a50f-98dd-8e13-a19b9f6cd6cb-9b251e8a" className="jet-s_bot_subtitle">
                                                 <div className="unit-36"></div>
-                                                <h3 data-line-reveal="true" className="p5">The best<br/>Our Partners</h3>
+                                                <h3 data-line-reveal="true" className="p5 tw-text-deep-blue">The best<br/>Our Partners</h3>
                                                 <div className="unit-24 b-mobile"></div>
                                             </div>
                                             <div id="w-node-a343ec6b-a50f-98dd-8e13-a19b9f6cd6cf-9b251e8a" className="jet-s_bot_desc">
@@ -73,8 +73,8 @@ useEffect(() => {
                                                     <div className="line-h"></div>
                                                     <div className="unit-12"></div>
                                                     <div className="jet-s_bot_desc_title_w">
-                                                        <div className="l1">Quality</div>
-                                                        <div className="l1"><strong>3 products<br/></strong></div>
+                                                        <div className="l1 tw-text-deep-blue">Quality</div>
+                                                        <div className="l1 tw-text-deep-blue"><strong>3 products<br/></strong></div>
                                                     </div>
                                                 </div>
                                                 <div className="unit-36"></div>
@@ -102,12 +102,12 @@ useEffect(() => {
                                             <div id="w-node-_1b7ad1cd-848a-9004-75f6-f9919e2ee478-9e2ee473" className="spec-s_left">
                                                 <div className="spec-s_left_top">
                                                     <div className="unit-12"></div>
-                                                    <div className="p5">New</div>
+                                                    <div className="p5"></div>
                                                     <div className="unit-24"></div>
-                                                    <div className="h3">ZSDRONE</div>
+                                                    <div className="h3 tw-text-deep-blue">ZSDRONE</div>
                                                 </div>
 
-                                                <div className="h3 tw-hidden lg:tw-block tw-absolute  tw-left-[45%]  ">
+                                                <div className="h3 tw-hidden lg:tw-block tw-absolute  tw-left-[45%] tw-text-deep-blue">
                             SANY
                         </div>
 
@@ -170,14 +170,14 @@ useEffect(() => {
                                                         </div> */}
                                                     </div>
                                                     <div id="w-node-_1b7ad1cd-848a-9004-75f6-f9919e2ee4a2-9e2ee473" className="spec-s_right_top_title">
-                                                            <h2 className="p5">Quality Products</h2>
+                                                            <h2 className="p5 tw-text-deep-blue">Quality Products</h2>
                                                         </div>
                                                     <div className="unit-24"></div>
                                                     <div className="spec-s_item">
                                                         <div className="line-h"></div>
                                                         <div className="unit-12"></div>
                                                       <div id="w-node-_1b7ad1cd-848a-9004-75f6-f9919e2ee4aa-9e2ee473" className="spec-s_right_top_desc_title">
-                                                                <h3 className="l1">Trusted Global Partners</h3>
+                                                                <h3 className="l1 tw-text-deep-blue">Trusted Global Partners</h3>
                                                             </div>
                                                         <div className="unit-12"></div>
                                                         <div className="jet-spec-cms w-dyn-list">
@@ -265,7 +265,7 @@ useEffect(() => {
                                                             {/* <div id="w-node-_1b7ad1cd-848a-9004-75f6-f9919e2ee4aa-9e2ee473" className="spec-s_right_top_desc_title">
                                                                 <h3 className="l1">Trusted Global Partners</h3>
                                                             </div> */}
-                                                             <div className="h3">CHARLATTE</div>
+                                                             <div className="h3 tw-text-deep-blue">CHARLATTE</div>
                                                         </div>
                                                         <div className="unit-36"></div>
                                                         <div className="grid _6-columns">
@@ -455,13 +455,13 @@ useEffect(() => {
 
                          {/* tanki */}
                          <div  className="jet lg:tw-w-[55em]  tanki-scale-responsive tw-absolute ">
-                            <img src="/tanki-fly.webp" loading="lazy" decoding="async" alt="Tanki" className="img-jet truck-shadow" />
+                            <img src="/tankii-fly.webp" loading="lazy" decoding="async" alt="Tanki" className="img-jet truck-shadow" />
                             <div className="style-css w-embed">
                                 <style dangerouslySetInnerHTML={{ __html: `
                                     .tanki-scale-responsive {
-                                        scale: 0.45 !important;
+                                        scale:  0.77!important;
                                         right: 0% !important; /* Adjust if needed to push it further right */
-                                        top: 80% !important; /* Adjust if needed to push it further up */
+                                        top: 82% !important; /* Adjust if needed to push it further up */
                                        
                                     }
                                     @media (min-width: 768px) {
