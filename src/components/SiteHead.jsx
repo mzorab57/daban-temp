@@ -172,15 +172,9 @@ export default function SiteHead() {
         integrity="sha384-yTBHjP90IjAKbdyVBgupsf4X/z6tU0GWIR/5UtriNSv1oKDkL8bwHisrYwUgDDWh"
         crossOrigin="anonymous"
       />
-      <link
-        href="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d5b157ea29e138590eb3fe_fav_32x32.png"
-        rel="shortcut icon"
-        type="image/x-icon"
-      />
-      <link
-        href="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d5b15bfb8f0cc62d1806d9_fav_256x256.png"
-        rel="apple-touch-icon"
-      />
+      <link rel="icon" type="image/png" sizes="32x32" href="/logofav.png?v=3" />
+      <link rel="shortcut icon" href="/logofav.png?v=3" />
+      <link rel="apple-touch-icon" href="/logofav.png?v=3" />
       <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
     </Helmet>
   );

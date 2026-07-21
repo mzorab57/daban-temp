@@ -23,8 +23,8 @@ export default function Header() {
                                     </a>
                                     <a hover="nav-item" href="#flight" className="nav-item w-inline-block">
                                         <div className="nav-item_label">
-                                            <div hover="text" className="t7 text-dark">Our Fleet</div>
-                                            <div hover="text" className="t7 text-dark is-2">Our Fleet</div>
+                                            <div hover="text" className="t7 text-dark">Servic</div>
+                                            <div hover="text" className="t7 text-dark is-2">Servic</div>
                                         </div>
                                         <div className="nav-item_bg">
                                             <div hover="bg" className="nav-item_bg_hover"></div>
@@ -32,8 +32,8 @@ export default function Header() {
                                     </a>
                                     <a hover="nav-item" href="#benefits" className="nav-item w-inline-block">
                                         <div className="nav-item_label">
-                                            <div hover="text" className="t7 text-dark">Advantages</div>
-                                            <div hover="text" className="t7 text-dark is-2">Advantages</div>
+                                            <div hover="text" className="t7 text-dark">Product</div>
+                                            <div hover="text" className="t7 text-dark is-2">Product</div>
                                         </div>
                                         <div className="nav-item_bg">
                                             <div hover="bg" className="nav-item_bg_hover"></div>
@@ -41,8 +41,8 @@ export default function Header() {
                                     </a>
                                     <a hover="nav-item" href="#global" className="nav-item w-inline-block">
                                         <div className="nav-item_label">
-                                            <div hover="text" className="t7 text-dark">Global</div>
-                                            <div hover="text" className="t7 text-dark is-2">Global</div>
+                                            <div hover="text" className="t7 text-dark">Case</div>
+                                            <div hover="text" className="t7 text-dark is-2">Case</div>
                                         </div>
                                         <div className="nav-item_bg">
                                             <div hover="bg" className="nav-item_bg_hover"></div>
@@ -69,8 +69,8 @@ export default function Header() {
                                             <div role="listitem" className="header_contact-cms_list_item w-dyn-item">
                                                 <a hover="nav-item" href="tel:+971544325050" className="nav-item w-inline-block">
                                                     <div className="nav-item_label">
-                                                        <div hover="text" className="t7 text-dark">+971 54 432 5050</div>
-                                                        <div hover="text" className="t7 text-dark is-2">+971 54 432 5050</div>
+                                                        <div hover="text" className="t7 text-dark">+964 750 405 5084</div>
+                                                        <div hover="text" className="t7 text-dark is-2">+964 750 405 5084</div>
                                                     </div>
                                                     <div className="nav-item_bg">
                                                         <div hover="bg" className="nav-item_bg_hover"></div>
