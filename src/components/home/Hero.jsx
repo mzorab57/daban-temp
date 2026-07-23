@@ -67,22 +67,33 @@ export default function Hero() {
                                 <div className="hero-w_bg">
                                     <div className="hero_overlay"></div>
                                     <div preloader-front-over="" className="hero-w_bg_front-over">
-                                        <div className="img-w"><img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9ddb4432de688d8f96eb1_img_hero-front-over.webp" loading="eager" alt="" className="img" /></div>
+                                        <div className="img-w">
+                                            <img src="./hero/plain-shadow.webp" loading="eager" alt="" className="img" /></div>
                                     </div>
                                     
                                     <div className="hero-w_bg_front">
-                                        <div className="img-w"><img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9dfe10f1c8a1d719c1e63_917d8b944f7f57b7fbe3969bf2719a2e_img_hero-front.webp" loading="eager" alt="jet window" className="img" /></div>
+                                        <div className="img-w">
+                                            <img src="./hero/plain-cover.webp" loading="eager" alt="jet window" className="img" /></div>
                                     </div>
                                     <div className="hero-w_bg_window">
                                         <div className="hero-w_bg_window_w">
                                             <div className="hero-w_bg_window_c">
                                                 <div preloader-knob-c="" className="hero-w_bg_window_knob_">
                                                     <div preloader-knob-2="" className="hero-w_bg_window_knob-2">
-                                                        <img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2.webp" loading="lazy" sizes="(max-width: 1680px) 100vw, 1680px" srcset="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2-p-500.webp 500w, https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2-p-800.webp 800w, https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2-p-1080.webp 1080w, https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2.webp 1680w"
+                                                        <img src="./hero/plain-dask-open.webp" loading="lazy" sizes="(max-width: 1680px) 100vw, 1680px" 
+                                                        srcset="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2-p-500.webp 500w, 
+                                                        https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2-p-800.webp 800w,
+                                                         https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2-p-1080.webp 1080w,
+                                                          https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d827d5233a3ae348505b_img_window-knob-2.webp 1680w"
                                                             alt="" className="img_knob" />
                                                             </div>
                                                     <div className="hero-w_bg_window_knob">
-                                                        <img src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob.webp" loading="lazy" sizes="(max-width: 1680px) 100vw, 1680px" srcset="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob-p-500.webp 500w, https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob-p-800.webp 800w, https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob-p-1080.webp 1080w, https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob.webp 1680w"
+                                                        <img 
+                                                        src="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob.webp" loading="lazy" sizes="(max-width: 1680px) 100vw, 1680px" 
+                                                        srcset="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob-p-500.webp 500w, 
+                                                        https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob-p-800.webp 800w, 
+                                                        https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob-p-1080.webp 1080w,
+                                                         https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d9d1aae1383a58699853ed_img_window-knob.webp 1680w"
                                                             alt="" className="img_knob" />
                                                             </div>
                                                 </div>
