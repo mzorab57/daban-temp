@@ -1,7 +1,117 @@
+import { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
+
 export default function Global() {
+    const globeContainerRef = useRef(null);
+    const sectionRef = useRef(null);
+    const { pathname } = useLocation();
+    const isProductsIndexRoute = pathname === "/products";
+
+    useEffect(() => {
+        const t = globeContainerRef.current;
+        // Wait for Globe and THREE to be available globally
+        if (!t || typeof window === 'undefined' || !window.Globe) {
+            // We can retry after a short delay if Globe script is still loading
+            const timer = setTimeout(() => {
+                if (t && window.Globe && !t.hasChildNodes()) initMyGlobe(t);
+            }, 1000);
+            return () => clearTimeout(timer);
+        }
+        
+        if (!t.hasChildNodes()) {
+            initMyGlobe(t);
+        }
+
+        function initMyGlobe(container) {
+            function onResize() {
+                if (globeInstance) {
+                    globeInstance.width(container.offsetWidth).height(container.offsetHeight);
+                }
+            }
+            
+            const o = [...Array(10).keys()].map(() => ({
+                startLat: 180 * (Math.random() - 0.5),
+                startLng: 360 * (Math.random() - 0.5),
+                endLat: 180 * (Math.random() - 0.5),
+                endLng: 360 * (Math.random() - 0.5),
+                color: ["#7A716E", "#7A716E"],
+            }));
+            const r = o.flatMap((e) => [
+                { lat: e.startLat, lng: e.startLng },
+                { lat: e.endLat, lng: e.endLng },
+            ]);
+            
+            const globeInstance = window.Globe()(container)
+                .globeImageUrl("https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68ba0382a28da03b24642636_globe-map.svg")
+                .showAtmosphere(false)
+                .backgroundColor("rgba(0,0,0,0)")
+                .width(container.offsetWidth)
+                .height(container.offsetHeight)
+                .arcsData(o)
+                .arcColor("color")
+                .arcStroke(0.5)
+                .arcDashLength(0.6)
+                .arcDashGap(0.2)
+                .arcDashAnimateTime(8000)
+                .arcsTransitionDuration(0)
+                .pointsData(r)
+                .pointColor(() => "#7A716E")
+                .pointAltitude(0)
+                .pointRadius(0.5)
+                .pointResolution(8)
+                .pointsTransitionDuration(0);
+                
+            const a = globeInstance.globeMaterial && globeInstance.globeMaterial();
+            if (a) {
+                a.shininess = 0;
+                if (window.THREE) a.specular = new window.THREE.Color(0);
+                a.needsUpdate = true;
+            }
+            
+            const i = globeInstance.controls();
+            i.enableZoom = false;
+            i.enablePan = false;
+            const s = typeof i.getPolarAngle === "function" ? i.getPolarAngle() : Math.PI / 2;
+            i.minPolarAngle = s;
+            i.maxPolarAngle = s;
+            i.autoRotate = true;
+            i.autoRotateSpeed = 2;
+            
+            window.addEventListener("resize", onResize);
+            
+            // Cleanup on unmount (though this component stays in App)
+            return () => window.removeEventListener("resize", onResize);
+        }
+    }, []);
+
+    useEffect(() => {
+        const section = sectionRef.current;
+        if (!section || typeof window === "undefined") return undefined;
+
+        // Route changes do not remount the footer, so resync the reveal state
+        // and globe sizing after the new page layout settles.
+        section.querySelectorAll('[data-prevent-flicker="true"]').forEach((node) => {
+            node.style.visibility = "visible";
+        });
+
+        const syncLayout = () => {
+            window.dispatchEvent(new Event("resize"));
+        };
+
+        const rafId = window.requestAnimationFrame(syncLayout);
+        const timeoutA = window.setTimeout(syncLayout, 120);
+        const timeoutB = window.setTimeout(syncLayout, 360);
+
+        return () => {
+            window.cancelAnimationFrame(rafId);
+            window.clearTimeout(timeoutA);
+            window.clearTimeout(timeoutB);
+        };
+    }, [pathname]);
+
     return (
-        <section id="global" bg="color" className="section clip">
-            <div className="container">
+        <section ref={sectionRef} id="global" bg="color" className="section clip tw-w-full tw-max-w-full">
+            <div className={`container${isProductsIndexRoute ? " global-container--products-full" : ""}`}>
                 <div className="globe_scroll-area">
                     <div className="globe-w">
                         <div className="globe-s">
@@ -372,13 +482,13 @@ export default function Global() {
                                             </svg>
                                         </div>
                                         <img
-                                            src="./zawi.webp"
+                                            src="/zawi.webp"
                                             loading="lazy"
                                             decoding="async"
                                             alt="globe"
                                             className="globe-img b-mobile"
                                         />
-                                        <div globe-container="" className="globe b-desktop"></div>
+                                        <div ref={globeContainerRef} globe-container="" className="globe b-desktop"></div>
                                     </div>
                                 </div>
                                 <div className="unit-36 b-desktop"></div>
@@ -1004,6 +1114,14 @@ export default function Global() {
                     <div className="city-mask-trigger"></div>
                 </div>
             </div>
+            <style>{`
+              .global-container--products-full {
+                width: 100% !important;
+                max-width: 100% !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+              }
+            `}</style>
         </section>
     );
 }

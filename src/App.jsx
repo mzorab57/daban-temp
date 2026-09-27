@@ -1,6 +1,13 @@
 import { useEffect, useRef } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import SiteHead from "./components/SiteHead";
 import Home from "./pages/Home";
+import ProductDetailPage from "./pages/ProductDetailPage";
+import ProductsPage from "./pages/ProductsPage";
+import AboutPage from "./pages/AboutPage";
+import GlobalHeader from "./components/home/GlobalHeader";
+import Global from "./components/home/Global";
+import LandscapeCover from "./components/home/LandscapeCover";
 import { loadSiteScripts } from "./services/loadSiteScripts";
 import "./styles/siteStyles.css";
 
@@ -15,6 +22,18 @@ function initWebflowClasses() {
     (window.DocumentTouch && document instanceof window.DocumentTouch);
   html.className += " w-mod-js";
   if (touch) html.className += " w-mod-touch";
+}
+
+function ScrollToTop() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!location.hash) {
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    }
+  }, [location.pathname, location.hash]);
+
+  return null;
 }
 
 export default function App() {
@@ -101,8 +120,6 @@ export default function App() {
       frameId = window.requestAnimationFrame(updateSceneEffects);
     };
 
-    // Webflow/Slater scripts continue adjusting layout right after mount.
-    // Run a few startup syncs so refreshing mid-page does not leave the mountain hidden.
     const syncSceneEffects = () => {
       requestSceneEffectsUpdate();
       followUpTimerId = window.setTimeout(requestSceneEffectsUpdate, 250);
@@ -137,8 +154,17 @@ export default function App() {
   return (
     <>
       <SiteHead />
+      <ScrollToTop />
       <div className="body">
-        <Home />
+        <GlobalHeader />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/products/:productId" element={<ProductDetailPage />} />
+        </Routes>
+        <Global />
+        <LandscapeCover />
       </div>
     </>
   );

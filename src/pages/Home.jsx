@@ -1,4 +1,3 @@
-import React from 'react';
 import Preloader from '../components/home/Preloader';
 import Header from '../components/home/Header';
 import Hero from '../components/home/Hero';
@@ -9,8 +8,6 @@ import Flight from '../components/home/Flight';
 import FlightMobile from '../components/home/FlightMobile';
 import Benefits from '../components/home/Benefits';
 import Data from '../components/home/Data';
-import Global from '../components/home/Global';
-import LandscapeCover from '../components/home/LandscapeCover';
 import StyleBlock from '../components/home/StyleBlock';
 
 export default function Home() {
@@ -31,8 +28,6 @@ export default function Home() {
         <FlightMobile />
         <Benefits />
         <Data />
-        <Global />
-        <LandscapeCover />
         <StyleBlock />
       </div>
     </div>

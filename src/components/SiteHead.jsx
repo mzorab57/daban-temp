@@ -172,9 +172,6 @@ export default function SiteHead() {
         integrity="sha384-yTBHjP90IjAKbdyVBgupsf4X/z6tU0GWIR/5UtriNSv1oKDkL8bwHisrYwUgDDWh"
         crossOrigin="anonymous"
       />
-      <link rel="icon" type="image/png" sizes="32x32" href="/logofav.png?v=3" />
-      <link rel="shortcut icon" href="/logofav.png?v=3" />
-      <link rel="apple-touch-icon" href="/logofav.png?v=3" />
       <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
     </Helmet>
   );
