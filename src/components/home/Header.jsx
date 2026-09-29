@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import CurvedMenu from "../ui/CurvedMenu";
 import { productCatalog } from "../../data/products";
 
 export default function Header() {
@@ -17,7 +18,7 @@ export default function Header() {
                             </div>
                             <div id="w-node-_08b01562-3862-0954-5251-f0b5079d1bf3-079d1bef" className="header_nav f-desktop">
                                 <div className="nav-item-list">
-                                    <Link hover="nav-item" to="/" className="nav-item w-inline-block">
+                                    <a onClickCapture={(e) => { e.preventDefault(); e.stopPropagation(); window.location.href = "/"; }} hover="nav-item" href="/" className="nav-item w-inline-block">
                                         <div className="nav-item_label">
                                             <div hover="text" className="t7 text-dark">Home</div>
                                             <div hover="text" className="t7 text-dark is-2">Home</div>
@@ -25,8 +26,8 @@ export default function Header() {
                                         <div className="nav-item_bg">
                                             <div hover="bg" className="nav-item_bg_hover"></div>
                                         </div>
-                                    </Link>
-                                    <Link hover="nav-item" to="/about" className="nav-item w-inline-block">
+                                    </a>
+                                    <Link onClickCapture={() => { window.scrollTo(0, 0); setTimeout(() => window.scrollTo(0, 0), 50); }} hover="nav-item" to="/about" className="nav-item w-inline-block">
                                         <div className="nav-item_label">
                                             <div hover="text" className="t7 text-dark">About</div>
                                             <div hover="text" className="t7 text-dark is-2">About</div>
@@ -35,7 +36,7 @@ export default function Header() {
                                             <div hover="bg" className="nav-item_bg_hover"></div>
                                         </div>
                                     </Link>
-                                    <Link hover="nav-item" to="/services" className="nav-item w-inline-block">
+                                    <Link onClickCapture={() => { window.scrollTo(0, 0); setTimeout(() => window.scrollTo(0, 0), 50); }} hover="nav-item" to="/services" className="nav-item w-inline-block">
                                         <div className="nav-item_label">
                                             <div hover="text" className="t7 text-dark">Services</div>
                                             <div hover="text" className="t7 text-dark is-2">Services</div>
@@ -46,7 +47,7 @@ export default function Header() {
                                     </Link>
                                     
                                     <div className={`product-nav-dropdown${productNavActive ? " is-active" : ""}`}>
-                                        <Link hover="nav-item" to="/products" className="nav-item w-inline-block">
+                                        <Link onClickCapture={() => { window.scrollTo(0, 0); setTimeout(() => window.scrollTo(0, 0), 50); }} hover="nav-item" to="/products" className="nav-item w-inline-block">
                                             <div className="nav-item_label">
                                                 <div hover="text" className="t7 text-dark">Product</div>
                                                 <div hover="text" className="t7 text-dark is-2">Product</div>
@@ -66,7 +67,7 @@ export default function Header() {
                                                 <div className="product-nav-menu_list">
                                                     {productCatalog.map((product, index) => (
                                                         <Link
-                                                          key={product.id}
+                                                          key={product.id} onClickCapture={() => { window.scrollTo(0, 0); setTimeout(() => window.scrollTo(0, 0), 50); }}
                                                           to={`/products/${product.id}`}
                                                           className="product-nav-menu_item"
                                                         >
@@ -92,7 +93,7 @@ export default function Header() {
                                 </div>
                             </div>
                             <div className="header_logo">
-                                <Link menu-close="mobile" data-div-reveal="true" to="/" className="link-logo w-inline-block">
+                                <a onClickCapture={(e) => { e.preventDefault(); e.stopPropagation(); window.location.href = "/"; }} menu-close="mobile" data-div-reveal="true" href="/" className="link-logo w-inline-block">
                                   <img
                                     src="/daban-header-logo.svg"
                                     alt="Daban Holding"
@@ -102,7 +103,7 @@ export default function Header() {
                                     decoding="async"
                                     style={{ width: '265px', height: 'auto', display: 'block' }}
                                   />
-                                </Link>
+                                </a>
                             </div>
                             <div id="w-node-_08b01562-3862-0954-5251-f0b5079d1c00-079d1bef" className="header_cta f-desktop">
                                 <div className="nav-item-list">
@@ -134,24 +135,7 @@ export default function Header() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="header_menu f-mobile">
-                                <div className="nav-item-list">
-                                    <a menu-btn="mobile" href="#" className="btn-menu w-inline-block">
-                                        <div className="btn-menu_icon">
-                                            <div menu-ico-1="mobile" className="ico-20 w-embed"><svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 2.66797H14V4.0013H2V2.66797Z" fill="currentColor"/>
-</svg></div>
-                                            <div menu-ico-2="mobile" className="ico-20 is-2 w-embed"><svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 8.0013H14V9.33464H2V8.0013Z" fill="currentColor"/>
-</svg></div>
-                                            <div menu-ico-3="mobile" className="ico-20 is-3 w-embed"><svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 13.332H14V14.6654H2V13.332Z" fill="currentColor"/>
-</svg></div>
-                                        </div>
-                                        <div className="btn-menu_bg"></div>
-                                    </a>
-                                </div>
-                            </div>
+                            <CurvedMenu />
                         </div>
                         <div className="unit-24"></div>
                     </div>

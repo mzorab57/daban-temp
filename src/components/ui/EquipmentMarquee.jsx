@@ -17,9 +17,9 @@ const secondRow = equipmentList.slice(equipmentList.length / 2);
 
 const EquipmentCard = ({ name }) => {
   return (
-    <div className="tw-relative tw-h-full tw-w-72 tw-cursor-pointer tw-overflow-hidden tw-rounded-2xl tw-border-2 tw-border-[#f1f5f9] tw-bg-white tw-shadow-sm tw-p-8 hover:tw-shadow-lg hover:tw-border-light-blue hover:tw--translate-y-1 tw-transition-all tw-duration-300">
+    <div className="tw-relative tw-h-full tw-w-40 md:tw-w-72 tw-cursor-pointer tw-overflow-hidden tw-rounded-xl md:tw-rounded-2xl tw-border-2 tw-border-[#f1f5f9] tw-bg-white tw-shadow-sm tw-p-4 md:tw-p-8 hover:tw-shadow-lg hover:tw-border-light-blue hover:tw--translate-y-1 tw-transition-all tw-duration-300">
       <div className="tw-flex tw-flex-col tw-h-full tw-justify-center tw-items-center tw-text-center">
-        <h3 className="tw-text-deep-blue tw-font-bold tw-text-xl tw-leading-tight">{name}</h3>
+        <h3 className="tw-text-deep-blue tw-font-bold tw-text-sm md:tw-text-xl tw-leading-tight">{name}</h3>
       </div>
     </div>
   );
@@ -37,13 +37,13 @@ export default function EquipmentMarquee() {
         </p>
       </div>
 
-      <Marquee pauseOnHover className="tw-[--duration:30s] tw-py-4">
+      <Marquee pauseOnHover style={{ "--duration": "30s" }} className="tw-py-4">
         {firstRow.map((item, idx) => (
           <EquipmentCard key={`r1-${idx}`} name={item} />
         ))}
       </Marquee>
       
-      <Marquee reverse pauseOnHover className="tw-[--duration:30s] tw-py-4">
+      <Marquee reverse pauseOnHover style={{ "--duration": "30s" }} className="tw-py-4">
         {secondRow.map((item, idx) => (
           <EquipmentCard key={`r2-${idx}`} name={item} />
         ))}

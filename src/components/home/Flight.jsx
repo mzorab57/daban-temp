@@ -56,16 +56,16 @@ useEffect(() => {
                                     <div className="jet-s_top"></div>
                                     <div className="jet-s_title">
                                         <h2 className="h-hiden tw-text-deep-blue">Fly the Legacy</h2>
-                                        <div data-char-reveal="true" className="h1 tw-text-deep-blue">Featured</div>
+                                        <div data-char-reveal="true" className="h1 tw-text-deep-blue">Main</div>
                                         <div className="jet-s_title_divider b-desktop"></div>
                                         <div className="jet-s_title_push current b-desktop"></div>
-                                        <div data-char-reveal="true" className="h1 a-right tw-text-deep-blue">Solutions</div>
+                                        <div data-char-reveal="true" className="h1 a-right tw-text-deep-blue">Product</div>
                                     </div>
                                     <div className="jet-s_bot">
                                         <div className="grid fill mobile">
                                             <div id="w-node-a343ec6b-a50f-98dd-8e13-a19b9f6cd6cb-9b251e8a" className="jet-s_bot_subtitle">
                                                 <div className="unit-36"></div>
-                                                <h3 data-line-reveal="true" className="p5 tw-text-deep-blue">Trusted<br/>Global Partners</h3>
+                                                <h3 data-line-reveal="true" className="p5 tw-text-deep-blue">The best<br/>Our Partners</h3>
                                                 <div className="unit-24 b-mobile"></div>
                                             </div>
                                             <div id="w-node-a343ec6b-a50f-98dd-8e13-a19b9f6cd6cf-9b251e8a" className="jet-s_bot_desc">

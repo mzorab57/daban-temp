@@ -824,7 +824,7 @@ export default function Global() {
                                                             className="contact-cms_list_item w-dyn-item"
                                                         >
                                                             <div className="link_label">
-                                                                <div className="t6 text-light">
+                                                                <div className="t6 text-light max-md:tw-text-base max-sm:tw-text-sm max-sm:tw-leading-normal tw-whitespace-normal tw-break-words">
                                                                     Erbil — English Village, No. 126
                                                                 </div>
                                                             </div>
@@ -842,12 +842,12 @@ export default function Global() {
                                                                 className="link w-inline-block"
                                                             >
                                                                 <div className="link_label">
-                                                                    <div hover="text" className="t6 text-light">
+                                                                    <div hover="text" className="t6 text-light max-md:tw-text-base max-sm:tw-text-sm max-sm:tw-leading-normal tw-whitespace-normal tw-break-words">
                                                                         info@dabangroup.com
                                                                     </div>
                                                                     <div
                                                                         hover="text"
-                                                                        className="t6 text-light is-2"
+                                                                        className="t6 text-light is-2 max-md:tw-text-base max-sm:tw-text-sm max-sm:tw-leading-normal tw-whitespace-normal tw-break-words"
                                                                     >
                                                                         info@dabangroup.com
                                                                     </div>
@@ -868,12 +868,12 @@ export default function Global() {
                                                                 className="link w-inline-block"
                                                             >
                                                                 <div className="link_label">
-                                                                    <div hover="text" className="t6 text-light">
+                                                                    <div hover="text" className="t6 text-light max-md:tw-text-base max-sm:tw-text-sm max-sm:tw-leading-normal tw-whitespace-normal tw-break-words">
                                                                         +964 750 405 5084
                                                                     </div>
                                                                     <div
                                                                         hover="text"
-                                                                        className="t6 text-light is-2"
+                                                                        className="t6 text-light is-2 max-md:tw-text-base max-sm:tw-text-sm max-sm:tw-leading-normal tw-whitespace-normal tw-break-words"
                                                                     >
                                                                         +964 750 405 5084
                                                                     </div>
@@ -991,7 +991,7 @@ export default function Global() {
                                                     className="contact-cms_list_item w-dyn-item"
                                                 >
                                                     <div className="link_label">
-                                                        <div className="t6 text-light">
+                                                        <div className="t6 text-light max-md:tw-text-base max-sm:tw-text-sm max-sm:tw-leading-normal tw-whitespace-normal tw-break-words">
                                                             Erbil — English Village, No. 126
                                                         </div>
                                                     </div>
@@ -1009,10 +1009,10 @@ export default function Global() {
                                                         className="link w-inline-block"
                                                     >
                                                         <div className="link_label">
-                                                            <div hover="text" className="t6 text-light">
+                                                            <div hover="text" className="t6 text-light max-md:tw-text-base max-sm:tw-text-sm max-sm:tw-leading-normal tw-whitespace-normal tw-break-words">
                                                                 info@dabangroup.com
                                                             </div>
-                                                            <div hover="text" className="t6 text-light is-2">
+                                                            <div hover="text" className="t6 text-light is-2 max-md:tw-text-base max-sm:tw-text-sm max-sm:tw-leading-normal tw-whitespace-normal tw-break-words">
                                                                 info@dabangroup.com
                                                             </div>
                                                         </div>
@@ -1032,10 +1032,10 @@ export default function Global() {
                                                         className="link w-inline-block"
                                                     >
                                                         <div className="link_label">
-                                                            <div hover="text" className="t6 text-light">
+                                                            <div hover="text" className="t6 text-light max-md:tw-text-base max-sm:tw-text-sm max-sm:tw-leading-normal tw-whitespace-normal tw-break-words">
                                                                 +964 750 405 5084
                                                             </div>
-                                                            <div hover="text" className="t6 text-light is-2">
+                                                            <div hover="text" className="t6 text-light is-2 max-md:tw-text-base max-sm:tw-text-sm max-sm:tw-leading-normal tw-whitespace-normal tw-break-words">
                                                                 +964 750 405 5084
                                                             </div>
                                                         </div>

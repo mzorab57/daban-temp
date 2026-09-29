@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import SiteHead from "./components/SiteHead";
+import InitialLoader from "./components/ui/InitialLoader";
 import Home from "./pages/Home";
 import ProductDetailPage from "./pages/ProductDetailPage";
 import ProductsPage from "./pages/ProductsPage";
@@ -155,6 +156,7 @@ export default function App() {
   return (
     <>
       <SiteHead />
+      <InitialLoader />
       <ScrollToTop />
       <div className="body">
         <GlobalHeader />
