@@ -7,16 +7,20 @@ export default function GlobalHeader() {
   const isHomeRoute = pathname === "/";
   const [isHidden, setIsHidden] = useState(false);
   const [isHomeReady, setIsHomeReady] = useState(false);
+  const [isAtTop, setIsAtTop] = useState(true);
   const lastScrollY = useRef(0);
   const sectionLink = (hash) => (pathname === "/" ? hash : `/${hash}`);
   const productNavActive = pathname.startsWith("/products");
   useEffect(() => {
     setIsHidden(false);
     lastScrollY.current = window.scrollY || 0;
+    setIsAtTop((window.scrollY || 0) <= 20);
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY || 0;
       const delta = currentScrollY - lastScrollY.current;
+      
+      setIsAtTop(currentScrollY <= 20);
 
       if (currentScrollY <= 20) {
         setIsHidden(false);
@@ -50,7 +54,7 @@ export default function GlobalHeader() {
     <div
       className={`header-global-shell is-inner-route theme_on-color${
         isHidden ? " is-hidden" : ""
-      }`}
+      }${!isAtTop ? " is-scrolled" : ""}`}
     >
                 <div theme="" className="header" style={{ opacity: 1, visibility: 'visible', transform: 'none' }}>
                     <div className="container">
@@ -61,6 +65,15 @@ export default function GlobalHeader() {
                             </div>
                             <div id="w-node-_08b01562-3862-0954-5251-f0b5079d1bf3-079d1bef" className="header_nav f-desktop">
                                 <div className="nav-item-list">
+                                    <a hover="nav-item" href="/" className="nav-item w-inline-block">
+                                        <div className="nav-item_label">
+                                            <div hover="text" className="t7 text-dark">Home</div>
+                                            <div hover="text" className="t7 text-dark is-2">Home</div>
+                                        </div>
+                                        <div className="nav-item_bg">
+                                            <div hover="bg" className="nav-item_bg_hover"></div>
+                                        </div>
+                                    </a>
                                     <Link hover="nav-item" to="/about" className="nav-item w-inline-block">
                                         <div className="nav-item_label">
                                             <div hover="text" className="t7 text-dark">About</div>
@@ -70,15 +83,15 @@ export default function GlobalHeader() {
                                             <div hover="bg" className="nav-item_bg_hover"></div>
                                         </div>
                                     </Link>
-                                    <a hover="nav-item" href={sectionLink("#flight")} className="nav-item w-inline-block">
+                                    <Link hover="nav-item" to="/services" className="nav-item w-inline-block">
                                         <div className="nav-item_label">
-                                            <div hover="text" className="t7 text-dark">Servic</div>
-                                            <div hover="text" className="t7 text-dark is-2">Servic</div>
+                                            <div hover="text" className="t7 text-dark">Services</div>
+                                            <div hover="text" className="t7 text-dark is-2">Services</div>
                                         </div>
                                         <div className="nav-item_bg">
                                             <div hover="bg" className="nav-item_bg_hover"></div>
                                         </div>
-                                    </a>
+                                    </Link>
                                     <div className={`product-nav-dropdown${productNavActive ? " is-active" : ""}`}>
                                         <Link hover="nav-item" to="/products" className="nav-item w-inline-block">
                                             <div className="nav-item_label">
@@ -233,7 +246,14 @@ export default function GlobalHeader() {
                   .header-global-shell.is-inner-route {
                     position: fixed;
                     top: 0;
-                    background: rgba(10, 20, 44, 0.2);
+                    background: transparent;
+                    backdrop-filter: none;
+                    -webkit-backdrop-filter: none;
+                    border-bottom: none;
+                  }
+
+                  .header-global-shell.is-inner-route.is-scrolled {
+                    background: rgba(10, 20, 44, 0.4);
                     backdrop-filter: blur(18px);
                     -webkit-backdrop-filter: blur(18px);
                     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -346,8 +366,8 @@ export default function GlobalHeader() {
                   }
 
                   @media (max-width: 991px) {
-                    .header-global-shell.is-inner-route {
-                      background: rgba(10, 20, 44, 0.28);
+                    .header-global-shell.is-inner-route.is-scrolled {
+                      background: rgba(10, 20, 44, 0.35);
                       backdrop-filter: blur(14px);
                       -webkit-backdrop-filter: blur(14px);
                     }

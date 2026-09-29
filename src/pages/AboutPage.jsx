@@ -336,6 +336,7 @@ const ParallaxHero = ({
 };
 
 import ScrollChoreography from "../components/ui/ScrollChoreography";
+import EquipmentMarquee from "../components/ui/EquipmentMarquee";
 
 const brandsImages = {
   topLeft: "/brands/SANY-Group.webp",
@@ -352,6 +353,7 @@ export default function AboutPage() {
       <div className="tw-w-full">
         <ScrollChoreography images={brandsImages} />
       </div>
+      <EquipmentMarquee />
     </div>
   );
 }

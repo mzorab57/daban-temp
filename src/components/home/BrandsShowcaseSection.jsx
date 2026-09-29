@@ -254,8 +254,8 @@ export default function BrandsShowcaseSection() {
           position: absolute;
           bottom: -0.375rem;
           right: -0.375rem;
-          width: 6rem;
-          height: 6rem;
+          width: 7.5rem;
+          height: 7.5rem;
           background: var(--clr);
           border-top-left-radius: 50%;
         }
@@ -293,7 +293,7 @@ export default function BrandsShowcaseSection() {
           justify-content: center;
           align-items: center;
           transition: 0.3s;
-          padding: 14px;
+          padding: 8px;
         }
 
         .brand-icon:hover .brand-iconBox {
@@ -307,10 +307,16 @@ export default function BrandsShowcaseSection() {
         }
 
         .brand-content {
-          position: relative;
+          position: absolute;
+          inset: 0;
           z-index: 2;
           padding: 2rem 1.5rem;
           pointer-events: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
         }
 
         .brand-content h3 {

@@ -4,6 +4,7 @@ import SiteHead from "./components/SiteHead";
 import Home from "./pages/Home";
 import ProductDetailPage from "./pages/ProductDetailPage";
 import ProductsPage from "./pages/ProductsPage";
+import ServicesPage from "./pages/ServicesPage";
 import AboutPage from "./pages/AboutPage";
 import GlobalHeader from "./components/home/GlobalHeader";
 import Global from "./components/home/Global";
@@ -160,6 +161,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/products/:productId" element={<ProductDetailPage />} />
         </Routes>

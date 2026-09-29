@@ -45,7 +45,7 @@ export default function Hero() {
                                                             <div play="true" 
                                                             data-json="https://cdn.prod.website-files.com/68b57ef5ef86011d9b251e8e/68d5aa6c275b70e82b936ed8_ico_scroll.json" className="ico_scroll"></div>
                                                         </div>
-                                                        <a href="#about" pop-up-close="" hover="link" pop-up-open="" className="link w-inline-block">
+                                                        <a href="/about" pop-up-close="" hover="link" pop-up-open="" className="link w-inline-block">
                                                             <div className="link_label">
                                                                 <div hover="text" className="l1 text-light">Scroll down</div>
                                                                 <div hover="text" className="l1 text-light is-2">Scroll down</div>

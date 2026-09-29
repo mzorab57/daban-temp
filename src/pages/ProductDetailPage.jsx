@@ -3,6 +3,8 @@ import { Link, Navigate, useParams } from "react-router-dom";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { getProductById, productCatalog } from "../data/products";
+import ProductOverview from "../components/products/ProductOverview";
+import RelatedModels from "../components/products/RelatedModels";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -184,35 +186,7 @@ export default function ProductDetailPage() {
             </div>
           </section>
 
-          <section className="k-section k-tertiary">
-            <div className="k-content">
-              <div className="product-base-shell k-card-style">
-                <div className="product-story-grid">
-                  <article className="product-story-card is-main">
-                    <span className="product-story-label">Overview</span>
-                    <p className="product-story-text">{product.description}</p>
-                  </article>
 
-                  <aside className="product-story-card is-side">
-                    <span className="product-story-label" style={{ marginBottom: "20px", display: "block" }}>Related models</span>
-                    <div className="product-related-list">
-                      {relatedProducts.map((item) => (
-                        <Link key={item.id} to={`/products/${item.id}`} className="product-related-link">
-                          <div className="product-related-img-wrap">
-                            <img src={item.detailImage || item.specificationImage} alt={item.shortName} className="product-related-img" />
-                          </div>
-                          <div className="product-related-info">
-                            <span>{item.shortName}</span>
-                            <small>{item.navLabel}</small>
-                          </div>
-                        </Link>
-                      ))}
-                    </div>
-                  </aside>
-                </div>
-              </div>
-            </div>
-          </section>
 
           {technicalSpecs.length > 0 && (
             <section ref={techSectionRef} className="k-section  product-tech-section">
@@ -259,12 +233,14 @@ export default function ProductDetailPage() {
             </section>
           )}
         </section>
+        <ProductOverview description={product.description} />
+        <RelatedModels relatedProducts={relatedProducts} />
       </main>
 
       <style>{`
         .product-detail-page {
           min-height: 100vh;
-          background: linear-gradient(180deg, #070d18 0%, #0b1221 36%, #eef3f9 36%, #f7f8fb 100%);
+          background: linear-gradient(180deg, #070d18 0%, #0b1221 36%, #ffffff 36%, #ffffff 100%);
         }
 
         .product-detail-main {
@@ -420,7 +396,7 @@ export default function ProductDetailPage() {
         .product-base-section {
           position: relative;
           z-index: 3;
-          background: linear-gradient(180deg, #eef3f9 0%, #f7f8fb 100%);
+          background: #ffffff;
         }
 
         .keyhole-wrapper {
@@ -708,7 +684,7 @@ export default function ProductDetailPage() {
 
         .product-tech-value {
           margin: 0;
-          color: #8fc2d7;
+          color: #000000;
           font-size: 1rem;
           line-height: 1.6;
           font-weight: 500;

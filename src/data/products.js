@@ -11,7 +11,7 @@ export const productCatalog = [
     video: "/assets/video/th600.mp4",
     showcaseVideo: "/assets/video/th600-showcase.mp4",
     detailImage: "/product/th600.jpg",
-    specificationImage: "/product/th600.png",
+    specificationImage: "/drone-fly.webp",
     heroEyebrow: "Heavy-Lift Rotorcraft",
     heroLead:
       "Engineered for cargo, logistics and demanding industrial missions where endurance and payload matter most.",
@@ -91,7 +91,7 @@ export const productCatalog = [
         text: "Works well across utilities, governance, monitoring and light logistics assignments.",
       },
     ],
-    specificationImage: "/product/em15.png",
+    specificationImage: "/product/em15-new.png",
     technicalSpecs: [
       {
         label: "Dimension",
@@ -167,7 +167,7 @@ export const productCatalog = [
         text: "Foldable construction helps reduce transport volume and speeds up field assembly.",
       },
     ],
-    specificationImage: "/product/EM135.jpg",
+    specificationImage: "/product/em135.png",
     technicalSpecs: [
       {
         label: "Dimension",

@@ -17,7 +17,16 @@ export default function Header() {
                             </div>
                             <div id="w-node-_08b01562-3862-0954-5251-f0b5079d1bf3-079d1bef" className="header_nav f-desktop">
                                 <div className="nav-item-list">
-                                    <a hover="nav-item" href={sectionLink("#about")} className="nav-item w-inline-block">
+                                    <Link hover="nav-item" to="/" className="nav-item w-inline-block">
+                                        <div className="nav-item_label">
+                                            <div hover="text" className="t7 text-dark">Home</div>
+                                            <div hover="text" className="t7 text-dark is-2">Home</div>
+                                        </div>
+                                        <div className="nav-item_bg">
+                                            <div hover="bg" className="nav-item_bg_hover"></div>
+                                        </div>
+                                    </Link>
+                                    <Link hover="nav-item" to="/about" className="nav-item w-inline-block">
                                         <div className="nav-item_label">
                                             <div hover="text" className="t7 text-dark">About</div>
                                             <div hover="text" className="t7 text-dark is-2">About</div>
@@ -25,16 +34,16 @@ export default function Header() {
                                         <div className="nav-item_bg">
                                             <div hover="bg" className="nav-item_bg_hover"></div>
                                         </div>
-                                    </a>
-                                    <a hover="nav-item" href={sectionLink("#flight")} className="nav-item w-inline-block">
+                                    </Link>
+                                    <Link hover="nav-item" to="/services" className="nav-item w-inline-block">
                                         <div className="nav-item_label">
-                                            <div hover="text" className="t7 text-dark">Servic</div>
-                                            <div hover="text" className="t7 text-dark is-2">Servic</div>
+                                            <div hover="text" className="t7 text-dark">Services</div>
+                                            <div hover="text" className="t7 text-dark is-2">Services</div>
                                         </div>
                                         <div className="nav-item_bg">
                                             <div hover="bg" className="nav-item_bg_hover"></div>
                                         </div>
-                                    </a>
+                                    </Link>
                                     
                                     <div className={`product-nav-dropdown${productNavActive ? " is-active" : ""}`}>
                                         <Link hover="nav-item" to="/products" className="nav-item w-inline-block">

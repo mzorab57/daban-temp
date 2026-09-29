@@ -74,7 +74,7 @@ export function ScrollChoreography({
         <div className="tw-absolute tw-inset-0">
           
           {/* Centering Wrapper for Top Left Image */}
-          <div className="tw-absolute tw-left-1/2 tw-top-1/2 tw-z-10" style={{ transform: 'translate(-50%, -40%)' }}>
+          <div className="tw-absolute tw-left-1/2 tw-top-1/2 tw-z-10" style={{ transform: 'translate(-50%, -50%)' }}>
             <motion.div
               style={{ x: tlX, y: tlY, opacity: underImagesOpacity }}
               className={`${baseImageClasses}`}
@@ -84,7 +84,7 @@ export function ScrollChoreography({
           </div>
 
           {/* Centering Wrapper for Bottom Right Image */}
-          <div className="tw-absolute tw-left-1/2 tw-top-1/2 tw-z-20" style={{ transform: 'translate(-50%, -40%)' }}>
+          <div className="tw-absolute tw-left-1/2 tw-top-1/2 tw-z-20" style={{ transform: 'translate(-50%, -50%)' }}>
             <motion.div
               style={{ x: brX, y: brY, opacity: underImagesOpacity }}
               className={`${baseImageClasses}`}
@@ -94,7 +94,7 @@ export function ScrollChoreography({
           </div>
 
           {/* Centering Wrapper for Bottom Left Image */}
-          <div className="tw-absolute tw-left-1/2 tw-top-1/2 tw-z-30" style={{ transform: 'translate(-50%, -40%)' }}>
+          <div className="tw-absolute tw-left-1/2 tw-top-1/2 tw-z-30" style={{ transform: 'translate(-50%, -50%)' }}>
             <motion.div
               style={{ x: blX, y: blY, opacity: underImagesOpacity }}
               className={`${baseImageClasses}`}
@@ -104,7 +104,7 @@ export function ScrollChoreography({
           </div>
 
           {/* Centering Wrapper for Top Right Image (Hero) */}
-          <div className="tw-absolute tw-left-1/2 tw-top-1/2 tw-z-40" style={{ transform: 'translate(-50%, -40%)' }}>
+          <div className="tw-absolute tw-left-1/2 tw-top-1/2 tw-z-40" style={{ transform: 'translate(-50%, -50%)' }}>
             <motion.div
               style={{
                 x: trX,

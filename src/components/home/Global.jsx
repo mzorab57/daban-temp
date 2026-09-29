@@ -291,22 +291,22 @@ export default function Global() {
                                                 y2="331.192"
                                                 gradientUnits="userSpaceOnUse"
                                             >
-                                                <stop stop-color="#6095D2" />
-                                                <stop offset="0.117896" stop-color="#4D6EA3" />
-                                                <stop offset="0.213837" stop-color="#214C9A" />
-                                                <stop offset="0.2912" stop-color="#112D6B" />
-                                                <stop offset="0.353363" stop-color="#0A142C" />
-                                                <stop offset="0.403704" stop-color="#0A142C" />
-                                                <stop offset="0.4456" stop-color="#0A142C" />
-                                                <stop offset="0.48243" stop-color="#0A142C" />
-                                                <stop offset="0.51757" stop-color="#0A142C" />
-                                                <stop offset="0.5544" stop-color="#0A142C" />
-                                                <stop offset="0.596296" stop-color="#0A142C" />
-                                                <stop offset="0.646637" stop-color="#0A142C" />
-                                                <stop offset="0.7088" stop-color="#0A142C" />
-                                                <stop offset="0.786163" stop-color="#0A142C" />
-                                                <stop offset="0.882104" stop-color="#0A142C" />
-                                                <stop offset="1" stop-color="#0A142C" />
+                                                <stop stopColor="#6095D2" />
+                                                <stop offset="0.117896" stopColor="#4D6EA3" />
+                                                <stop offset="0.213837" stopColor="#214C9A" />
+                                                <stop offset="0.2912" stopColor="#112D6B" />
+                                                <stop offset="0.353363" stopColor="#0A142C" />
+                                                <stop offset="0.403704" stopColor="#0A142C" />
+                                                <stop offset="0.4456" stopColor="#0A142C" />
+                                                <stop offset="0.48243" stopColor="#0A142C" />
+                                                <stop offset="0.51757" stopColor="#0A142C" />
+                                                <stop offset="0.5544" stopColor="#0A142C" />
+                                                <stop offset="0.596296" stopColor="#0A142C" />
+                                                <stop offset="0.646637" stopColor="#0A142C" />
+                                                <stop offset="0.7088" stopColor="#0A142C" />
+                                                <stop offset="0.786163" stopColor="#0A142C" />
+                                                <stop offset="0.882104" stopColor="#0A142C" />
+                                                <stop offset="1" stopColor="#0A142C" />
                                             </linearGradient>
                                             <linearGradient
                                                 id="paint1_linear_307_1283"
@@ -316,22 +316,22 @@ export default function Global() {
                                                 y2="331.192"
                                                 gradientUnits="userSpaceOnUse"
                                             >
-                                                <stop stop-color="#6095D2" />
-                                                <stop offset="0.117896" stop-color="#4D6EA3" />
-                                                <stop offset="0.213837" stop-color="#214C9A" />
-                                                <stop offset="0.2912" stop-color="#112D6B" />
-                                                <stop offset="0.353363" stop-color="#0A142C" />
-                                                <stop offset="0.403704" stop-color="#0A142C" />
-                                                <stop offset="0.4456" stop-color="#0A142C" />
-                                                <stop offset="0.48243" stop-color="#0A142C" />
-                                                <stop offset="0.51757" stop-color="#0A142C" />
-                                                <stop offset="0.5544" stop-color="#0A142C" />
-                                                <stop offset="0.596296" stop-color="#0A142C" />
-                                                <stop offset="0.646637" stop-color="#0A142C" />
-                                                <stop offset="0.7088" stop-color="#0A142C" />
-                                                <stop offset="0.786163" stop-color="#0A142C" />
-                                                <stop offset="0.882104" stop-color="#0A142C" />
-                                                <stop offset="1" stop-color="#0A142C" />
+                                                <stop stopColor="#6095D2" />
+                                                <stop offset="0.117896" stopColor="#4D6EA3" />
+                                                <stop offset="0.213837" stopColor="#214C9A" />
+                                                <stop offset="0.2912" stopColor="#112D6B" />
+                                                <stop offset="0.353363" stopColor="#0A142C" />
+                                                <stop offset="0.403704" stopColor="#0A142C" />
+                                                <stop offset="0.4456" stopColor="#0A142C" />
+                                                <stop offset="0.48243" stopColor="#0A142C" />
+                                                <stop offset="0.51757" stopColor="#0A142C" />
+                                                <stop offset="0.5544" stopColor="#0A142C" />
+                                                <stop offset="0.596296" stopColor="#0A142C" />
+                                                <stop offset="0.646637" stopColor="#0A142C" />
+                                                <stop offset="0.7088" stopColor="#0A142C" />
+                                                <stop offset="0.786163" stopColor="#0A142C" />
+                                                <stop offset="0.882104" stopColor="#0A142C" />
+                                                <stop offset="1" stopColor="#0A142C" />
                                             </linearGradient>
                                             <linearGradient
                                                 id="paint2_linear_307_1283"
@@ -341,22 +341,22 @@ export default function Global() {
                                                 y2="331.192"
                                                 gradientUnits="userSpaceOnUse"
                                             >
-                                                <stop stop-color="#6095D2" />
-                                                <stop offset="0.117896" stop-color="#4D6EA3" />
-                                                <stop offset="0.213837" stop-color="#214C9A" />
-                                                <stop offset="0.2912" stop-color="#112D6B" />
-                                                <stop offset="0.353363" stop-color="#0A142C" />
-                                                <stop offset="0.403704" stop-color="#0A142C" />
-                                                <stop offset="0.4456" stop-color="#0A142C" />
-                                                <stop offset="0.48243" stop-color="#0A142C" />
-                                                <stop offset="0.51757" stop-color="#0A142C" />
-                                                <stop offset="0.5544" stop-color="#0A142C" />
-                                                <stop offset="0.596296" stop-color="#0A142C" />
-                                                <stop offset="0.646637" stop-color="#0A142C" />
-                                                <stop offset="0.7088" stop-color="#0A142C" />
-                                                <stop offset="0.786163" stop-color="#0A142C" />
-                                                <stop offset="0.882104" stop-color="#0A142C" />
-                                                <stop offset="1" stop-color="#0A142C" />
+                                                <stop stopColor="#6095D2" />
+                                                <stop offset="0.117896" stopColor="#4D6EA3" />
+                                                <stop offset="0.213837" stopColor="#214C9A" />
+                                                <stop offset="0.2912" stopColor="#112D6B" />
+                                                <stop offset="0.353363" stopColor="#0A142C" />
+                                                <stop offset="0.403704" stopColor="#0A142C" />
+                                                <stop offset="0.4456" stopColor="#0A142C" />
+                                                <stop offset="0.48243" stopColor="#0A142C" />
+                                                <stop offset="0.51757" stopColor="#0A142C" />
+                                                <stop offset="0.5544" stopColor="#0A142C" />
+                                                <stop offset="0.596296" stopColor="#0A142C" />
+                                                <stop offset="0.646637" stopColor="#0A142C" />
+                                                <stop offset="0.7088" stopColor="#0A142C" />
+                                                <stop offset="0.786163" stopColor="#0A142C" />
+                                                <stop offset="0.882104" stopColor="#0A142C" />
+                                                <stop offset="1" stopColor="#0A142C" />
                                             </linearGradient>
                                             <linearGradient
                                                 id="paint3_linear_307_1283"
@@ -366,22 +366,22 @@ export default function Global() {
                                                 y2="331.192"
                                                 gradientUnits="userSpaceOnUse"
                                             >
-                                                <stop stop-color="#6095D2" />
-                                                <stop offset="0.117896" stop-color="#4D6EA3" />
-                                                <stop offset="0.213837" stop-color="#214C9A" />
-                                                <stop offset="0.2912" stop-color="#112D6B" />
-                                                <stop offset="0.353363" stop-color="#0A142C" />
-                                                <stop offset="0.403704" stop-color="#0A142C" />
-                                                <stop offset="0.4456" stop-color="#0A142C" />
-                                                <stop offset="0.48243" stop-color="#0A142C" />
-                                                <stop offset="0.51757" stop-color="#0A142C" />
-                                                <stop offset="0.5544" stop-color="#0A142C" />
-                                                <stop offset="0.596296" stop-color="#0A142C" />
-                                                <stop offset="0.646637" stop-color="#0A142C" />
-                                                <stop offset="0.7088" stop-color="#0A142C" />
-                                                <stop offset="0.786163" stop-color="#0A142C" />
-                                                <stop offset="0.882104" stop-color="#0A142C" />
-                                                <stop offset="1" stop-color="#0A142C" />
+                                                <stop stopColor="#6095D2" />
+                                                <stop offset="0.117896" stopColor="#4D6EA3" />
+                                                <stop offset="0.213837" stopColor="#214C9A" />
+                                                <stop offset="0.2912" stopColor="#112D6B" />
+                                                <stop offset="0.353363" stopColor="#0A142C" />
+                                                <stop offset="0.403704" stopColor="#0A142C" />
+                                                <stop offset="0.4456" stopColor="#0A142C" />
+                                                <stop offset="0.48243" stopColor="#0A142C" />
+                                                <stop offset="0.51757" stopColor="#0A142C" />
+                                                <stop offset="0.5544" stopColor="#0A142C" />
+                                                <stop offset="0.596296" stopColor="#0A142C" />
+                                                <stop offset="0.646637" stopColor="#0A142C" />
+                                                <stop offset="0.7088" stopColor="#0A142C" />
+                                                <stop offset="0.786163" stopColor="#0A142C" />
+                                                <stop offset="0.882104" stopColor="#0A142C" />
+                                                <stop offset="1" stopColor="#0A142C" />
                                             </linearGradient>
                                             <linearGradient
                                                 id="paint4_linear_307_1283"
@@ -391,22 +391,22 @@ export default function Global() {
                                                 y2="331.192"
                                                 gradientUnits="userSpaceOnUse"
                                             >
-                                                <stop stop-color="#6095D2" />
-                                                <stop offset="0.117896" stop-color="#4D6EA3" />
-                                                <stop offset="0.213837" stop-color="#214C9A" />
-                                                <stop offset="0.2912" stop-color="#112D6B" />
-                                                <stop offset="0.353363" stop-color="#0A142C" />
-                                                <stop offset="0.403704" stop-color="#0A142C" />
-                                                <stop offset="0.4456" stop-color="#0A142C" />
-                                                <stop offset="0.48243" stop-color="#0A142C" />
-                                                <stop offset="0.51757" stop-color="#0A142C" />
-                                                <stop offset="0.5544" stop-color="#0A142C" />
-                                                <stop offset="0.596296" stop-color="#0A142C" />
-                                                <stop offset="0.646637" stop-color="#0A142C" />
-                                                <stop offset="0.7088" stop-color="#0A142C" />
-                                                <stop offset="0.786163" stop-color="#0A142C" />
-                                                <stop offset="0.882104" stop-color="#0A142C" />
-                                                <stop offset="1" stop-color="#0A142C" />
+                                                <stop stopColor="#6095D2" />
+                                                <stop offset="0.117896" stopColor="#4D6EA3" />
+                                                <stop offset="0.213837" stopColor="#214C9A" />
+                                                <stop offset="0.2912" stopColor="#112D6B" />
+                                                <stop offset="0.353363" stopColor="#0A142C" />
+                                                <stop offset="0.403704" stopColor="#0A142C" />
+                                                <stop offset="0.4456" stopColor="#0A142C" />
+                                                <stop offset="0.48243" stopColor="#0A142C" />
+                                                <stop offset="0.51757" stopColor="#0A142C" />
+                                                <stop offset="0.5544" stopColor="#0A142C" />
+                                                <stop offset="0.596296" stopColor="#0A142C" />
+                                                <stop offset="0.646637" stopColor="#0A142C" />
+                                                <stop offset="0.7088" stopColor="#0A142C" />
+                                                <stop offset="0.786163" stopColor="#0A142C" />
+                                                <stop offset="0.882104" stopColor="#0A142C" />
+                                                <stop offset="1" stopColor="#0A142C" />
                                             </linearGradient>
                                             <linearGradient
                                                 id="paint5_linear_307_1283"
@@ -416,22 +416,22 @@ export default function Global() {
                                                 y2="331.192"
                                                 gradientUnits="userSpaceOnUse"
                                             >
-                                                <stop stop-color="#6095D2" />
-                                                <stop offset="0.117896" stop-color="#4D6EA3" />
-                                                <stop offset="0.213837" stop-color="#214C9A" />
-                                                <stop offset="0.2912" stop-color="#112D6B" />
-                                                <stop offset="0.353363" stop-color="#0A142C" />
-                                                <stop offset="0.403704" stop-color="#0A142C" />
-                                                <stop offset="0.4456" stop-color="#0A142C" />
-                                                <stop offset="0.48243" stop-color="#0A142C" />
-                                                <stop offset="0.51757" stop-color="#0A142C" />
-                                                <stop offset="0.5544" stop-color="#0A142C" />
-                                                <stop offset="0.596296" stop-color="#0A142C" />
-                                                <stop offset="0.646637" stop-color="#0A142C" />
-                                                <stop offset="0.7088" stop-color="#0A142C" />
-                                                <stop offset="0.786163" stop-color="#0A142C" />
-                                                <stop offset="0.882104" stop-color="#0A142C" />
-                                                <stop offset="1" stop-color="#0A142C" />
+                                                <stop stopColor="#6095D2" />
+                                                <stop offset="0.117896" stopColor="#4D6EA3" />
+                                                <stop offset="0.213837" stopColor="#214C9A" />
+                                                <stop offset="0.2912" stopColor="#112D6B" />
+                                                <stop offset="0.353363" stopColor="#0A142C" />
+                                                <stop offset="0.403704" stopColor="#0A142C" />
+                                                <stop offset="0.4456" stopColor="#0A142C" />
+                                                <stop offset="0.48243" stopColor="#0A142C" />
+                                                <stop offset="0.51757" stopColor="#0A142C" />
+                                                <stop offset="0.5544" stopColor="#0A142C" />
+                                                <stop offset="0.596296" stopColor="#0A142C" />
+                                                <stop offset="0.646637" stopColor="#0A142C" />
+                                                <stop offset="0.7088" stopColor="#0A142C" />
+                                                <stop offset="0.786163" stopColor="#0A142C" />
+                                                <stop offset="0.882104" stopColor="#0A142C" />
+                                                <stop offset="1" stopColor="#0A142C" />
                                             </linearGradient>
                                         </defs>
                                     </svg>
