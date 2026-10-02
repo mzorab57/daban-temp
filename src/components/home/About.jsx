@@ -2,28 +2,46 @@ import React from 'react';
 
 const features = [
     {
-        title: "Construction & General Trading",
+        title: "Construction",
         titleClass: "p5 tw-text-primary-blue lg:tw-text-white",
         desc: "Delivering high-quality construction projects and trusted trading solutions across diverse industries.",
         descClass: "p7 tw-text-white",
     },
     {
-        title: "Firefighting Solutions",
-        titleClass: "p5 tw-text-primary-blue lg:tw-text-white",
-        desc: "Providing advanced fire protection systems and safety solutions that meet international standards.",
-        descClass: "p7 tw-text-white",
-    },
-    {
-        title: "Robot Trading",
+        title: "Robot Trading & Robotics",
         titleClass: "p5 tw-text-primary-blue lg:tw-text-white",
         desc: "Supplying innovative robotic technologies that enhance automation and industrial performance.",
         descClass: "p7 tw-text-white",
     },
     {
-        title: "Partnerships & Cooperations",
+        title: "Drone Equipment & Small Aircraft",
+        titleClass: "p5 tw-text-primary-blue lg:tw-text-white",
+        desc: "Advanced aerial platforms for inspection, monitoring, and diverse industrial applications.",
+        descClass: "p7 tw-text-white",
+    },
+    {
+        title: "Firefighting Equipment",
+        titleClass: "p5 tw-text-primary-blue lg:tw-text-white",
+        desc: "Providing advanced fire protection systems and safety solutions that meet international standards.",
+        descClass: "p7 tw-text-white",
+    },
+    {
+        title: "Security Solutions",
+        titleClass: "p5 tw-text-primary-blue lg:tw-text-white",
+        desc: "State-of-the-art security systems and barriers for public and private infrastructure.",
+        descClass: "p7 tw-text-white",
+    },
+    {
+        title: "General Trading & Dealerships",
+        titleClass: "p5 tw-text-primary-blue lg:tw-text-white",
+        desc: "Comprehensive trading services and official dealerships for major global brands.",
+        descClass: "p7 tw-text-white",
+    },
+    {
+        title: "Government Partnerships",
         titleClass: "p5 tw-text-primary-blue lg:tw-text-white",
         desc: "Creating strategic partnerships with local and international organizations to drive sustainable growth.",
-        descClass: "p7  tw-text-white",
+        descClass: "p7 tw-text-white",
     }
 ];
 
@@ -36,7 +54,7 @@ export default function About() {
                                 <div className="unit-96"></div>
                                 <div data-div-reveal="true" id="w-node-c6cefa80-f7b3-f3f7-eec7-08a3529fc895-9b251e8a" className="about-s_lead-text">
                                     <div className="about-s_lead-text_c">
-                                        <h2 data-highlight-text="" className="p2 text-light">Daban Group is a diversified company specializing in construction, trading, and logistics. Founded in 1997 by Mr. Sarhad Jawad Arif, the company has built a strong reputation over more than 25 years.  </h2>
+                                        <h2 data-highlight-text="" className="p2 text-light">Daban Group is a diversified company specializing in Construction, Robot Trading, Robotics, Drone Equipment, Small Aircraft, Firefighting Equipment, Security Solutions, General Trading, Dealerships, and Government Partnerships. Founded in 1999 by Mr. Sarhad Jawad Arif, the company has built a strong reputation over more than 25 years.  </h2>
                                     </div>
                                 </div>
                                 <div className="unit-96 lg:tw-mt-[12rem]"></div>

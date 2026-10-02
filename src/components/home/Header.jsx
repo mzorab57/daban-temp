@@ -58,38 +58,43 @@ export default function Header() {
                                         </Link>
 
                                         <div className="product-nav-menu">
-                                            <div className="product-nav-menu_inner">
-                                                <div className="product-nav-menu_head">
-                                                    <span className="product-nav-menu_kicker">Drone lineup</span>
-                                                    <span className="product-nav-menu_copy">Choose a dedicated product page</span>
-                                                </div>
-
-                                                <div className="product-nav-menu_list">
-                                                    {productCatalog.map((product, index) => (
-                                                        <Link
-                                                          key={product.id} onClickCapture={() => { window.scrollTo(0, 0); setTimeout(() => window.scrollTo(0, 0), 50); }}
-                                                          to={`/products/${product.id}`}
-                                                          className="product-nav-menu_item"
-                                                        >
-                                                            <span className="product-nav-menu_index">{`0${index + 1}`}</span>
-                                                            <span className="product-nav-menu_name">{product.shortName}</span>
-                                                            <span className="product-nav-menu_meta">{product.navLabel}</span>
-                                                        </Link>
-                                                    ))}
+                                            <div className="product-nav-menu_inner tw-bg-white tw-border tw-border-gray-100 tw-shadow-2xl tw-w-full tw-rounded-[24px] tw-overflow-hidden">
+                                                <div className="tw-max-w-7xl tw-mx-auto tw-w-full tw-py-10 lg:tw-py-12 tw-px-6">
+                                                    <div className="tw-grid tw-grid-cols-3 tw-gap-8">
+                                                        {productCatalog.map((product) => {
+                                                            let imgSrc = product.id === 'em15' ? '/product/em15-new.png' :
+                                                                         product.id === 'em135' ? '/product/em135.png' :
+                                                                         '/product/th600.webp';
+                                                            return (
+                                                            <Link
+                                                              key={product.id} onClickCapture={() => { window.scrollTo(0, 0); setTimeout(() => window.scrollTo(0, 0), 50); }}
+                                                              to={`/products/${product.id}`}
+                                                              className="tw-flex tw-flex-col tw-h-full tw-items-center tw-text-center tw-group tw-no-underline hover:tw-no-underline"
+                                                            >
+                                                                <div className="tw-flex tw-flex-col tw-flex-grow">
+                                                                    <h3 className="tw-text-[#112D6B] tw-text-2xl lg:tw-text-3xl tw-font-bold tw-mb-2 group-hover:tw-text-blue-600 tw-transition-colors">{product.name}</h3>
+                                                                    <p className="tw-text-gray-500 tw-text-sm tw-mb-6 tw-max-w-xs">{product.heroEyebrow || product.specs}</p>
+                                                                </div>
+                                                                <div className="tw-w-full tw-h-[240px] tw-flex tw-items-center tw-justify-center tw-bg-gray-50 tw-rounded-2xl group-hover:tw-scale-105 group-hover:tw-shadow-lg tw-transition-all tw-duration-300 tw-p-6 tw-mt-auto">
+                                                                    <img src={imgSrc} alt={product.name} className={`tw-max-w-full tw-max-h-full tw-object-contain ${product.id === 'th600' ? 'tw-scale-[1.6]' : ''}`} />
+                                                                </div>
+                                                            </Link>
+                                                        )})}
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     
-                                    <a hover="nav-item" href={sectionLink("#global")} className="nav-item w-inline-block">
+                                    <Link onClickCapture={() => { window.scrollTo(0, 0); setTimeout(() => window.scrollTo(0, 0), 50); }} hover="nav-item" to="/contact" className="nav-item w-inline-block">
                                         <div className="nav-item_label">
-                                            <div hover="text" className="t7 text-dark">Case</div>
-                                            <div hover="text" className="t7 text-dark is-2">Case</div>
+                                            <div hover="text" className="t7 text-dark">Contact</div>
+                                            <div hover="text" className="t7 text-dark is-2">Contact</div>
                                         </div>
                                         <div className="nav-item_bg">
                                             <div hover="bg" className="nav-item_bg_hover"></div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="header_logo">
@@ -146,12 +151,23 @@ export default function Header() {
                     position: relative;
                   }
 
-                  .product-nav-menu {
+                  .product-nav-menu::before {
+                    content: '';
                     position: absolute;
-                    top: calc(100% + 14px);
+                    top: -25px;
+                    left: 0;
+                    right: 0;
+                    height: 25px;
+                    background: transparent;
+                  }
+
+                  .product-nav-menu {
+                    position: fixed;
+                    top: 65px;
                     left: 50%;
+                    width: 92vw;
+                    max-width: 1200px;
                     transform: translateX(-50%) translateY(8px);
-                    width: 320px;
                     opacity: 0;
                     visibility: hidden;
                     pointer-events: none;
@@ -168,14 +184,7 @@ export default function Header() {
                   }
 
                   .product-nav-menu_inner {
-                    border-radius: 24px;
-                    overflow: hidden;
-                    border: 1px solid rgba(17, 45, 107, 0.08);
-                    background:
-                      radial-gradient(circle at top right, rgba(143, 194, 215, 0.24), transparent 28%),
-                      linear-gradient(180deg, rgba(255, 255, 255, 0.97) 0%, rgba(244, 247, 251, 0.98) 100%);
-                    box-shadow: 0 24px 70px rgba(10, 20, 44, 0.16);
-                    padding: 12px;
+                    
                   }
 
                   .product-nav-menu_head {
@@ -253,3 +262,4 @@ export default function Header() {
             </div>
   );
 }
+

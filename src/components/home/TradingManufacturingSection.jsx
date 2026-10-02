@@ -27,7 +27,7 @@ const ITEMS = [
     src: "/product/th600.jpg",
     alt: "TH600 Tandem Helicopter",
     title: "TH600",
-    description: "Heavy-Lift Rotorcraft engineered for cargo, logistics and demanding industrial missions where endurance and payload matter most.",
+    description: "Heavy-Lift Rotorcraft engineered for cargo, operations and demanding industrial missions where endurance and payload matter most.",
   },
  
 ];

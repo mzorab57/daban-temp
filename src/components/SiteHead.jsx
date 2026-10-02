@@ -5,8 +5,8 @@ const organizationSchema = {
   "@type": "Organization",
   name: "Daban Holding",
   description:
-    "Daban Group is a diversified company specializing in construction, trading, and logistics. Founded in 1997 by Mr. Sarhad Jawad Arif, the company has built a strong reputation over more than 25 years. Today, Daban Group is recognized as one of the largest and most reputable companies in the Kurdistan Region, with a proven track record of excellence in construction, commercial activities, and logistics services.",
-  foundingDate: "1997",
+    "Daban Group is a diversified company specializing in Construction, Robot Trading, Robotics, Drone Equipment, Small Aircraft, Firefighting Equipment, Security Solutions, General Trading, Dealerships, and Government Partnerships. Founded in 1999 by Mr. Sarhad Jawad Arif, the company has built a strong reputation over more than 25 years. Today, Daban Group is recognized as one of the largest and most reputable companies in the Kurdistan Region, with a proven track record of excellence in construction, commercial activities, robotics, drone equipment, and security solutions.",
+  foundingDate: "1999",
   founder: { "@type": "Person", name: "Sarhad Jawad Arif" },
   url: "https://dabanholding.com",
   logo: {

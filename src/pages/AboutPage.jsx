@@ -417,7 +417,7 @@ function HeroSection() {
 
         <div className="icsa-layer icsa-dark">
           <h1>Building Kurdistan</h1>
-          <p>Since 1997</p>
+          <p>Since 1999</p>
         </div>
 
         <div
@@ -425,7 +425,7 @@ function HeroSection() {
           style={{ clipPath: `circle(${clipR}px at ${clipX}px ${clipY}px)` }}
         >
           <h1>Building Kurdistan</h1>
-          <p>Since 1997</p>
+          <p>Since 1999</p>
         </div>
       </section>
     </div>
@@ -454,7 +454,7 @@ function ContentSection() {
     <section ref={ref} className={`icsa-cs${on ? " on" : ""}`}>
       <div className="icsa-inner">
         <span className="icsa-label">About Daban Company</span>
-        <h2>Building Kurdistan since 1997</h2>
+        <h2>Building Kurdistan since 1999</h2>
         <div className="icsa-text-content">
           <p>
             Daban Group is a general trading and constructing group of firms founded by Mr. Sarhad J. Arif. Registered under the Kurdistan Region General Trade Directorate (No. 253) with a capital of 150,000,000 IQD.

@@ -17,7 +17,7 @@ export default function ProductsShowcase() {
           </h2>
 
           <p className="header-desc">
-     From advanced industrial drone platforms to raw building materials and fully fabricated telecom towers — every product is delivered with the precision Daban Holding has been known for since 1997.
+     From advanced industrial drone platforms to raw building materials and fully fabricated telecom towers — every product is delivered with the precision Daban Holding has been known for since 1999.
           </p>
         </header>
 

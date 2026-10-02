@@ -49,9 +49,7 @@ const CustomFooter = () => {
 			<a href="#" className="hover:tw-underline" target="_blank" rel="noopener noreferrer">
 				Instagram
 			</a>
-			<a href="#" className="hover:tw-underline" target="_blank" rel="noopener noreferrer">
-				Contact
-			</a>
+			<Link onClick={() => window.scrollTo(0,0)} to="/contact" className="hover:tw-underline">Contact</Link>
 		</div>
 	);
 };

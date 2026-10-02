@@ -749,7 +749,7 @@ export default function Global() {
                                             </div>
                                         </div>
                                         <div className="globe-factoid-s_card_title">
-                                            <h4 className="l1 tw-text-medium-blue">Trusted since 1997</h4>
+                                            <h4 className="l1 tw-text-medium-blue">Trusted since 1999</h4>
                                                                                       
                                         </div>
                                         <div className="globe-factoid-s_card_bot">
@@ -792,7 +792,7 @@ export default function Global() {
                                             className="globe-bot-s_left_title"
                                         >
                                             <h3 data-line-reveal="true" className="p5 text-light">
-                                               Building, supplying and protecting since 1997
+                                               Building, supplying and protecting since 1999
                                             </h3>
                                             <div className="unit-60 b-desktop"></div>
                                             <div className="unit-36 b-mobile"></div>

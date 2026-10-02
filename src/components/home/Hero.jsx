@@ -10,10 +10,10 @@ export default function Hero() {
                                     <div className="unit-156"></div>
                                     <div className="grid fill">
                                         <div hero-s_left="" id="w-node-_56a9c997-003c-f73c-85f6-4b080b85aa36-9b251e8a" className="hero-s_title-l">
-                                            <h1 data-prevent-flicker="true" data-char-reveal="true" className="h2 text-light">We are movement</h1>
+                                            <h1 data-prevent-flicker="true" data-char-reveal="true" className="h2 text-light">Built on Experience</h1>
                                         </div>
                                         <div hero-s_right="" id="w-node-b5bc0e69-6d9b-6b76-42c5-655f89025957-9b251e8a" className="hero-s_title-r">
-                                            <h2 data-prevent-flicker="true" data-char-reveal="true" className="h2 a-right text-light">We are distinction</h2>
+                                            <h2 data-prevent-flicker="true" data-char-reveal="true" className="h2 a-right text-light">Driven by Progress</h2>
                                         </div>
                                     </div>
                                     <div className="unit-216"></div>
@@ -53,7 +53,7 @@ export default function Hero() {
                                                         </a>
                                                     </div>
                                                     <div className="hero-s_bot_scroll_cont_item">
-                                                        <div className="l1 text-light">Trusted since 1997</div>
+                                                        <div className="l1 text-light">Trusted since 1999</div>
                                                     </div>
                                                 </div>
                                             </div>

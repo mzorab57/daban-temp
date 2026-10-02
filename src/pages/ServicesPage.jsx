@@ -74,8 +74,8 @@ export default function ServicesPage() {
         enterLabel="Step inside"
         front={
           <>
-            <p data-sublime-eyebrow>Four practices under one roof</p>
-            <p data-sublime-support>construction, firefighting, robotics and cooperations</p>
+            <p data-sublime-eyebrow>Ten practices under one roof</p>
+            <p data-sublime-support>Construction, Robot Trading, Robotics, Drone Equipment, Small Aircraft, Firefighting Equipment, Security Solutions, General Trading, Dealerships, and Government Partnerships</p>
             <span data-sublime-scroll>Scroll for a closer look ↓</span>
           </>
         }
@@ -83,10 +83,10 @@ export default function ServicesPage() {
         <div className="tw-py-24">
           <div className="tw-px-6 md:tw-px-12 lg:tw-px-24 tw-max-w-5xl tw-mx-auto tw-mb-32 tw-text-center tw-flex tw-flex-col tw-items-center">
             <h2 className="tw-text-4xl md:tw-text-6xl tw-text-white tw-font-[800] tw-leading-tight tw-mb-8">
-              Four practices under one roof
+              Ten practices under one roof
             </h2>
             <p className="tw-text-[rgba(255,255,255,0.7)] tw-text-xl md:tw-text-2xl tw-leading-relaxed tw-font-medium">
-              Daban Holding operates through specialised divisions — construction, firefighting, robotics and cooperations — each with its own equipment, engineers and playbook.
+              Daban Holding operates through specialised divisions — Construction, Robot Trading, Robotics, Drone Equipment, Small Aircraft, Firefighting Equipment, Security Solutions, General Trading, Dealerships, and Government Partnerships — each with its own equipment, engineers and playbook.
             </p>
           </div>
 

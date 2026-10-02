@@ -14,7 +14,7 @@ export const productCatalog = [
     specificationImage: "/drone-fly.webp",
     heroEyebrow: "Heavy-Lift Rotorcraft",
     heroLead:
-      "Engineered for cargo, logistics and demanding industrial missions where endurance and payload matter most.",
+      "Engineered for cargo and demanding industrial missions where endurance and payload matter most.",
     baseTitle: "Aerial platform base",
     baseCopy:
       "The TH600 is built around lift efficiency, stability and mission continuity. Its tandem layout gives operators a strong structural base for heavier payload classes and extended flights in hard conditions.",
@@ -29,7 +29,7 @@ export const productCatalog = [
       },
       {
         title: "Field Deployment",
-        text: "Suited for logistics, inspection support and aerial response where manned alternatives are inefficient.",
+        text: "Suited for inspection support and aerial response where manned alternatives are inefficient.",
       },
     ],
     technicalSpecs: [
@@ -55,7 +55,7 @@ export const productCatalog = [
       },
       {
         label: "Mission domains",
-        value: "Firefighting, logistics, military, power inspection, agriculture",
+        value: "Firefighting, military, power inspection, agriculture",
       },
     ],
   },
@@ -67,7 +67,7 @@ export const productCatalog = [
     brand: "ZSDrone",
     specs: "Foldable airframe • Rapid deployment • Diverse payloads",
     description:
-      "The EM15 Quadrotor Drone is ZSDrone's standardized flagship industrial UAV. A foldable airframe delivers outstanding flight safety, reliable stability and superior portability for rapid deployment. Quick hot-swap batteries and modular mounts allow flexible integration of loudspeakers, law-enforcement modules and other functional payloads. With a 15 kg maximum take-off weight and 5 kg payload, it excels across power line inspection, smart city governance and logistics transportation.",
+      "The EM15 Quadrotor Drone is ZSDrone's standardized flagship industrial UAV. A foldable airframe delivers outstanding flight safety, reliable stability and superior portability for rapid deployment. Quick hot-swap batteries and modular mounts allow flexible integration of loudspeakers, law-enforcement modules and other functional payloads. With a 15 kg maximum take-off weight and 5 kg payload, it excels across power line inspection, smart city governance  transportation.",
     video: "/assets/video/em15.mp4",
     showcaseVideo: "/assets/video/em15-showcase.mp4",
     detailImage: "/product/em15.png",
@@ -88,7 +88,7 @@ export const productCatalog = [
       },
       {
         title: "Operational Reach",
-        text: "Works well across utilities, governance, monitoring and light logistics assignments.",
+        text: "Works well across utilities, governance, monitoring and light operations assignments.",
       },
     ],
     specificationImage: "/product/em15-new.png",
