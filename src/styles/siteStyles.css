@@ -200,15 +200,22 @@ select:-webkit-autofill {
 
 @media screen and (max-width: 767px) {
     .features-cms_list {
-        grid-template-columns: 1fr !important;
-        gap: 16px !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 24px 16px !important;
     }
     .features-card_title h3 {
+        font-size: 1.15rem !important;
+        line-height: 1.25 !important;
         word-break: break-word !important;
     }
     .features-card_desc p {
-        font-size: 0.8rem !important;
+        font-size: 0.78rem !important;
+        line-height: 1.35 !important;
         word-break: break-word !important;
+    }
+    .line-divider-w .unit-24 {
+        height: 12px !important;
     }
 }
 

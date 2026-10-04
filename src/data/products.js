@@ -10,7 +10,7 @@ export const productCatalog = [
       "When the mission demands more than conventional drones can deliver, the TH600 answers the call. With a 300 kg payload, over four hours of continuous flight and a high-efficiency 95-octane gasoline engine, it redefines what a heavy-lift aerial platform can achieve. Its tandem rotor design provides exceptional aerodynamic stability and optimized load distribution, staying steady in turbulent winds and hostile environments.",
     video: "/assets/video/th600.mp4",
     showcaseVideo: "/assets/video/th600-showcase.mp4",
-    detailImage: "/product/th600.jpg",
+    detailImage: "/product/th600.webp",
     specificationImage: "/drone-fly.webp",
     heroEyebrow: "Heavy-Lift Rotorcraft",
     heroLead:
@@ -146,7 +146,7 @@ export const productCatalog = [
       "The EM135 is a high-load industrial-grade UAV engineered for heavy-duty aerial transportation and large-scale industrial operations. A reinforced aerodynamic structure and high-torque power system give it exceptional load-bearing capacity, stability and environmental adaptability. The integrated foldable airframe cuts transport volume and enables rapid on-site deployment with no complex assembly.",
     video: "/assets/video/em135.mp4",
     showcaseVideo: "/assets/video/em135-showcase.mp4",
-    detailImage: "/product/EM135.jpg",
+    detailImage: "/product/em135-webp.webp",
     heroEyebrow: "High-Load Multirotor",
     heroLead:
       "Purpose-built for heavy-duty transport and large-scale operations in harsh industrial environments.",

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import CurvedMenu from "../ui/CurvedMenu";
 import { productCatalog } from "../../data/products";
@@ -6,6 +7,7 @@ export default function Header() {
   const { pathname } = useLocation();
   const sectionLink = (hash) => (pathname === "/" ? hash : `/${hash}`);
   const productNavActive = pathname.startsWith("/products");
+  const [forceCloseMenu, setForceCloseMenu] = useState(false);
 
   return (
     <div className="theme_on-color">
@@ -27,7 +29,7 @@ export default function Header() {
                                             <div hover="bg" className="nav-item_bg_hover"></div>
                                         </div>
                                     </a>
-                                    <Link onClickCapture={() => { window.scrollTo(0, 0); setTimeout(() => window.scrollTo(0, 0), 50); }} hover="nav-item" to="/about" className="nav-item w-inline-block">
+                                    <Link onClickCapture={() => { setForceCloseMenu(true); window.scrollTo(0, 0); setTimeout(() => window.scrollTo(0, 0), 50); setTimeout(() => setForceCloseMenu(false), 500); }} hover="nav-item" to="/about" className="nav-item w-inline-block">
                                         <div className="nav-item_label">
                                             <div hover="text" className="t7 text-dark">About</div>
                                             <div hover="text" className="t7 text-dark is-2">About</div>
@@ -36,7 +38,7 @@ export default function Header() {
                                             <div hover="bg" className="nav-item_bg_hover"></div>
                                         </div>
                                     </Link>
-                                    <Link onClickCapture={() => { window.scrollTo(0, 0); setTimeout(() => window.scrollTo(0, 0), 50); }} hover="nav-item" to="/services" className="nav-item w-inline-block">
+                                    <Link onClickCapture={() => { setForceCloseMenu(true); window.scrollTo(0, 0); setTimeout(() => window.scrollTo(0, 0), 50); setTimeout(() => setForceCloseMenu(false), 500); }} hover="nav-item" to="/services" className="nav-item w-inline-block">
                                         <div className="nav-item_label">
                                             <div hover="text" className="t7 text-dark">Services</div>
                                             <div hover="text" className="t7 text-dark is-2">Services</div>
@@ -46,8 +48,8 @@ export default function Header() {
                                         </div>
                                     </Link>
                                     
-                                    <div className={`product-nav-dropdown${productNavActive ? " is-active" : ""}`}>
-                                        <Link onClickCapture={() => { window.scrollTo(0, 0); setTimeout(() => window.scrollTo(0, 0), 50); }} hover="nav-item" to="/products" className="nav-item w-inline-block">
+                                    <div className={`product-nav-dropdown${productNavActive ? " is-active" : ""}${forceCloseMenu ? " force-close-dropdown" : ""}`}>
+                                        <Link onClickCapture={() => { setForceCloseMenu(true); window.scrollTo(0, 0); setTimeout(() => window.scrollTo(0, 0), 50); setTimeout(() => setForceCloseMenu(false), 500); }} hover="nav-item" to="/products" className="nav-item w-inline-block">
                                             <div className="nav-item_label">
                                                 <div hover="text" className="t7 text-dark">Product</div>
                                                 <div hover="text" className="t7 text-dark is-2">Product</div>
@@ -63,11 +65,11 @@ export default function Header() {
                                                     <div className="tw-grid tw-grid-cols-3 tw-gap-8">
                                                         {productCatalog.map((product) => {
                                                             let imgSrc = product.id === 'em15' ? '/product/em15-new.png' :
-                                                                         product.id === 'em135' ? '/product/em135.png' :
-                                                                         '/product/th600.webp';
+                                                                         product.id === 'em135' ? '/product/em135-png.webp' :
+                                                                         '/product/th600-png.webp';
                                                             return (
                                                             <Link
-                                                              key={product.id} onClickCapture={() => { window.scrollTo(0, 0); setTimeout(() => window.scrollTo(0, 0), 50); }}
+                                                              key={product.id} onClickCapture={() => { setForceCloseMenu(true); window.scrollTo(0, 0); setTimeout(() => window.scrollTo(0, 0), 50); setTimeout(() => setForceCloseMenu(false), 500); }}
                                                               to={`/products/${product.id}`}
                                                               className="tw-flex tw-flex-col tw-h-full tw-items-center tw-text-center tw-group tw-no-underline hover:tw-no-underline"
                                                             >
@@ -75,8 +77,22 @@ export default function Header() {
                                                                     <h3 className="tw-text-[#112D6B] tw-text-2xl lg:tw-text-3xl tw-font-bold tw-mb-2 group-hover:tw-text-blue-600 tw-transition-colors">{product.name}</h3>
                                                                     <p className="tw-text-gray-500 tw-text-sm tw-mb-6 tw-max-w-xs">{product.heroEyebrow || product.specs}</p>
                                                                 </div>
-                                                                <div className="tw-w-full tw-h-[240px] tw-flex tw-items-center tw-justify-center tw-bg-gray-50 tw-rounded-2xl group-hover:tw-scale-105 group-hover:tw-shadow-lg tw-transition-all tw-duration-300 tw-p-6 tw-mt-auto">
-                                                                    <img src={imgSrc} alt={product.name} className={`tw-max-w-full tw-max-h-full tw-object-contain ${product.id === 'th600' ? 'tw-scale-[1.6]' : ''}`} />
+                                                                <div className="tw-w-full tw-h-[190px] tw-flex tw-items-center tw-justify-center tw-bg-gray-50 tw-rounded-2xl group-hover:tw-scale-105 group-hover:tw-shadow-lg tw-transition-all tw-duration-300 tw-p-6 tw-mt-auto">
+                                                                    <img 
+                                                                        src={imgSrc} 
+                                                                        alt={product.name} 
+                                                                        className="tw-max-w-full tw-max-h-full tw-object-contain"
+                                                                        style={{
+                                                                            transform: product.id === 'th600' 
+                                                                                ? 'scale(1.15)' 
+                                                                                : product.id === 'em135' 
+                                                                                ? 'scale(1.45)' 
+                                                                                : product.id === 'em15' 
+                                                                                ? 'scale(0.80)' 
+                                                                                : 'none',
+                                                                            transformOrigin: 'center center'
+                                                                        }}
+                                                                    />
                                                                 </div>
                                                             </Link>
                                                         )})}
@@ -86,7 +102,7 @@ export default function Header() {
                                         </div>
                                     </div>
                                     
-                                    <Link onClickCapture={() => { window.scrollTo(0, 0); setTimeout(() => window.scrollTo(0, 0), 50); }} hover="nav-item" to="/contact" className="nav-item w-inline-block">
+                                    <Link onClickCapture={() => { setForceCloseMenu(true); window.scrollTo(0, 0); setTimeout(() => window.scrollTo(0, 0), 50); setTimeout(() => setForceCloseMenu(false), 500); }} hover="nav-item" to="/contact" className="nav-item w-inline-block">
                                         <div className="nav-item_label">
                                             <div hover="text" className="t7 text-dark">Contact</div>
                                             <div hover="text" className="t7 text-dark is-2">Contact</div>
@@ -147,6 +163,14 @@ export default function Header() {
                 </div>
                 
                 <style>{`
+                  
+                  .product-nav-dropdown.force-close-dropdown .product-nav-menu {
+                    opacity: 0 !important;
+                    visibility: hidden !important;
+                    pointer-events: none !important;
+                    transform: translateX(-50%) translateY(8px) !important;
+                  }
+  
                   .product-nav-dropdown {
                     position: relative;
                   }

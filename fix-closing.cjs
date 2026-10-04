@@ -1,29 +1,47 @@
 const fs = require('fs');
+const files = ['src/components/home/GlobalHeader.jsx', 'src/components/home/Header.jsx'];
 
-['src/components/home/Header.jsx', 'src/components/home/GlobalHeader.jsx'].forEach(file => {
+files.forEach(file => {
   let content = fs.readFileSync(file, 'utf8');
-  
-  let i = 0;
-  let newContent = '';
-  let inLink = false;
 
-  const lines = content.split('\n');
-  for (let line of lines) {
-    if (line.includes('<Link')) {
-      inLink = true;
+  // Add the state hook
+  if (!content.includes('const [forceCloseMenu, setForceCloseMenu]')) {
+    content = content.replace('const [isAtTop, setIsAtTop] = useState(true);', 'const [isAtTop, setIsAtTop] = useState(true);\n  const [forceCloseMenu, setForceCloseMenu] = useState(false);');
+    // If it's Header.jsx which might not have isAtTop
+    if (!content.includes('const [forceCloseMenu')) {
+        content = content.replace('const [isHidden, setIsHidden] = useState(false);', 'const [isHidden, setIsHidden] = useState(false);\n  const [forceCloseMenu, setForceCloseMenu] = useState(false);');
     }
-    if (line.includes('</a>') && inLink) {
-      line = line.replace('</a>', '</Link>');
-      inLink = false;
-    }
-    if (line.includes('<a ') && !line.includes('href={sectionLink("#global")}')) {
-        // Just in case it's another <a> we don't want to mess up.
-        // But the logo is also an <a>, we shouldn't close it as </Link>.
-        // Logo has e.preventDefault() so it's in an <a> tag.
-        inLink = false;
-    }
-    newContent += line + '\n';
   }
+
+  // Update the product link onClickCapture
+  content = content.replace(
+    /onClickCapture=\{\(\) => \{ window\.scrollTo\(0, 0\); setTimeout\(\(\) => window\.scrollTo\(0, 0\), 50\); \}\}/g,
+    'onClickCapture={() => { setForceCloseMenu(true); window.scrollTo(0, 0); setTimeout(() => window.scrollTo(0, 0), 50); setTimeout(() => setForceCloseMenu(false), 500); }}'
+  );
   
-  fs.writeFileSync(file, newContent);
+  // Note: this replace above will also affect other Links if they match exactly. That's fine, forcing close on any click is good!
+  
+  // Apply force-close class to the dropdown
+  content = content.replace(
+    /<div className=\{\`product-nav-dropdown\$\{productNavActive \? " is-active" : ""\}\`\}>/,
+    '<div className={`product-nav-dropdown${productNavActive ? " is-active" : ""}${forceCloseMenu ? " force-close-dropdown" : ""}`}>'
+  );
+
+  // Add CSS for force closing
+  const closingCSS = `
+                  .product-nav-dropdown.force-close-dropdown .product-nav-menu {
+                    opacity: 0 !important;
+                    visibility: hidden !important;
+                    pointer-events: none !important;
+                    transform: translateX(-50%) translateY(8px) !important;
+                  }
+  `;
+  if (!content.includes('.force-close-dropdown')) {
+    content = content.replace('.product-nav-dropdown {', closingCSS + '\n                  .product-nav-dropdown {');
+  }
+
+  // Shrink the image cards height
+  content = content.replace(/tw-h-\[240px\]/g, 'tw-h-[190px]');
+
+  fs.writeFileSync(file, content);
 });

@@ -29,7 +29,7 @@ export default function ServicesPage() {
       id: 4,
       title: "04 Cooperations",
       description: "Strategic cooperations and joint ventures with foreign and local partners to deliver large-scale infrastructure.",
-      imageUrl: "/case/Cooperations.jpeg",
+      imageUrl: "/case/Cooperations.webp",
       reverse: true,
     },
   ];
