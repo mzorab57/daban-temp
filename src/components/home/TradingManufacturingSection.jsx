@@ -17,14 +17,14 @@ const ITEMS = [
  
   {
     id: 2,
-    src: "/product/EM135.jpg",
+    src: "/product/em135-webp.webp",
     alt: "EM135 Heavy-Payload",
     title: "EM135",
     description: "Purpose-built for heavy-duty transport and large-scale operations in harsh industrial environments.",
   },
    {
     id: 1,
-    src: "/product/th600.jpg",
+    src: "/product/th600-webp.webp",
     alt: "TH600 Tandem Helicopter",
     title: "TH600",
     description: "Heavy-Lift Rotorcraft engineered for cargo, operations and demanding industrial missions where endurance and payload matter most.",

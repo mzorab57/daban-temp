@@ -834,7 +834,7 @@ export default function Global() {
                                                             className="contact-cms_list_item w-dyn-item"
                                                         >
                                                             <a
-                                                                href="mailto:info@dabangroup.com"
+                                                                href="mailto:info@dabanholding.com"
                                                                 pop-up-close=""
                                                                 hover="link"
                                                                 pop-up-open=""
@@ -843,13 +843,13 @@ export default function Global() {
                                                             >
                                                                 <div className="link_label">
                                                                     <div hover="text" className="t6 text-light max-md:tw-text-base max-sm:tw-text-sm max-sm:tw-leading-normal tw-whitespace-normal tw-break-words">
-                                                                        info@dabangroup.com
+                                                                        info@dabanholding.com
                                                                     </div>
                                                                     <div
                                                                         hover="text"
                                                                         className="t6 text-light is-2 max-md:tw-text-base max-sm:tw-text-sm max-sm:tw-leading-normal tw-whitespace-normal tw-break-words"
                                                                     >
-                                                                        info@dabangroup.com
+                                                                        info@dabanholding.com
                                                                     </div>
                                                                 </div>
                                                                 <div className="d-none">Contact</div>
@@ -1001,7 +1001,7 @@ export default function Global() {
                                                     className="contact-cms_list_item w-dyn-item"
                                                 >
                                                     <a
-                                                        href="mailto:info@dabangroup.com"
+                                                        href="mailto:info@dabanholding.com"
                                                         pop-up-close=""
                                                         hover="link"
                                                         pop-up-open=""
@@ -1010,10 +1010,10 @@ export default function Global() {
                                                     >
                                                         <div className="link_label">
                                                             <div hover="text" className="t6 text-light max-md:tw-text-base max-sm:tw-text-sm max-sm:tw-leading-normal tw-whitespace-normal tw-break-words">
-                                                                info@dabangroup.com
+                                                                info@dabanholding.com
                                                             </div>
                                                             <div hover="text" className="t6 text-light is-2 max-md:tw-text-base max-sm:tw-text-sm max-sm:tw-leading-normal tw-whitespace-normal tw-break-words">
-                                                                info@dabangroup.com
+                                                                info@dabanholding.com
                                                             </div>
                                                         </div>
                                                         <div className="d-none">Contact</div>

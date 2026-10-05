@@ -6,19 +6,19 @@ const BENEFITS_DATA = [
         id: 'Government',
         title: 'Government',
         description: 'Border Police Barriers, Construction of security barriers along the Kurdistan Region border.',
-        image: './case/goverment.webp',
+        image: './case/goverment-1.webp',
     },
     {
         id: 'Education',
         title: 'Education',
         description: 'Media School — Sulaimanyah, Full construction delivery of a modern media school building.',
-        image: './case/media-school.webp',
+        image: './case/media-school-1.webp',
     },
     {
         id: 'Telecom',
         title: 'Telecom',
         description: 'Asiacell Communication Towers, Manufacturing and installing aerial towers across Kurdistan Iraq.',
-        image: './case/telecom.webp',
+        image: './case/telecom-1.webp',
     },
     {
         id: 'Civil',

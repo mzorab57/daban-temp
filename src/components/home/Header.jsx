@@ -171,23 +171,31 @@ export default function Header() {
                     transform: translateX(-50%) translateY(8px) !important;
                   }
   
-                  .product-nav-dropdown {
+                  .header_nav .nav-item {
                     position: relative;
+                    z-index: 60;
                   }
 
-                  .product-nav-menu::before {
+                  .product-nav-dropdown {
+                    position: relative;
+                    z-index: 60;
+                  }
+
+                  /* Invisible hover bridge positioned strictly beneath the Product button */
+                  .product-nav-dropdown::after {
                     content: '';
                     position: absolute;
-                    top: -25px;
-                    left: 0;
-                    right: 0;
-                    height: 25px;
+                    top: 100%;
+                    left: -10px;
+                    right: -10px;
+                    height: 35px;
                     background: transparent;
+                    z-index: 35;
                   }
 
                   .product-nav-menu {
                     position: fixed;
-                    top: 65px;
+                    top: 62px;
                     left: 50%;
                     width: 92vw;
                     max-width: 1200px;

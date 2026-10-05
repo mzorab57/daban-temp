@@ -37,7 +37,7 @@ export default function ContactPage() {
             <ul className="tw-flex tw-flex-col tw-gap-6 tw-text-gray-600 tw-text-lg">
               <li className="tw-flex tw-flex-col">
                 <span className="tw-text-sm tw-font-bold tw-text-gray-400 tw-uppercase tw-tracking-wider tw-mb-1">General Inquiries</span>
-                <a href="mailto:info@dabangroup.com" className="tw-text-[#112D6B] tw-font-semibold hover:tw-text-blue-500 tw-transition-colors">info@dabangroup.com</a>
+                <a href="mailto:info@dabanholding.com" className="tw-text-[#112D6B] tw-font-semibold hover:tw-text-blue-500 tw-transition-colors">info@dabanholding.com</a>
               </li>
               <li className="tw-flex tw-flex-col">
                 <span className="tw-text-sm tw-font-bold tw-text-gray-400 tw-uppercase tw-tracking-wider tw-mb-1">Business</span>

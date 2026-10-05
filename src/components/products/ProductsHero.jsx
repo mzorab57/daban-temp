@@ -7,9 +7,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 const FRAME_COUNT = 240;
 const FRAME_EXT = ".jpg";
+const FRAME_VERSION = "2";
 
 function framePath(n) {
-  return `/frames/frame_${String(n).padStart(3, "0")}${FRAME_EXT}`;
+  return `/frames/frame_${String(n).padStart(3, "0")}${FRAME_EXT}?v=${FRAME_VERSION}`;
 }
 
 export default function ProductsHero() {

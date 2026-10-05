@@ -3,43 +3,43 @@ import React from 'react';
 const features = [
     {
         title: "Construction",
-        titleClass: "p5 tw-text-primary-blue lg:tw-text-white",
+        titleClass: "p5 tw-text-primary-blue lg:!tw-text-dark-navy",
         desc: "Delivering high-quality construction projects and trusted trading solutions across diverse industries.",
         descClass: "p7 tw-text-white",
     },
     {
         title: "Robot Trading & Robotics",
-        titleClass: "p5 tw-text-primary-blue lg:tw-text-white",
+        titleClass: "p5 tw-text-primary-blue lg:!tw-text-dark-navy",
         desc: "Supplying innovative robotic technologies that enhance automation and industrial performance.",
         descClass: "p7 tw-text-white",
     },
     {
         title: "Drone Equipment & Small Aircraft",
-        titleClass: "p5 tw-text-primary-blue lg:tw-text-white",
+        titleClass: "p5 tw-text-primary-blue lg:!tw-text-dark-navy",
         desc: "Advanced aerial platforms for inspection, monitoring, and diverse industrial applications.",
         descClass: "p7 tw-text-white",
     },
     {
         title: "Firefighting Equipment",
-        titleClass: "p5 tw-text-primary-blue lg:tw-text-white",
+        titleClass: "p5 tw-text-primary-blue lg:!tw-text-dark-navy",
         desc: "Providing advanced fire protection systems and safety solutions that meet international standards.",
         descClass: "p7 tw-text-white",
     },
     {
         title: "Security Solutions",
-        titleClass: "p5 tw-text-primary-blue lg:tw-text-white",
+        titleClass: "p5 tw-text-primary-blue lg:!tw-text-dark-navy",
         desc: "State-of-the-art security systems and barriers for public and private infrastructure.",
         descClass: "p7 tw-text-white",
     },
     {
         title: "General Trading & Dealerships",
-        titleClass: "p5 tw-text-primary-blue lg:tw-text-white",
+        titleClass: "p5 tw-text-primary-blue lg:!tw-text-dark-navy",
         desc: "Comprehensive trading services and official dealerships for major global brands.",
         descClass: "p7 tw-text-white",
     },
     {
         title: "Government Partnerships",
-        titleClass: "p5 tw-text-primary-blue lg:tw-text-white",
+        titleClass: "p5 tw-text-primary-blue lg:!tw-text-dark-navy",
         desc: "Creating strategic partnerships with local and international organizations to drive sustainable growth.",
         descClass: "p7 tw-text-white",
     }
@@ -48,7 +48,7 @@ const features = [
 export default function About() {
   return (
     <section className="section" style={{ backgroundColor: 'transparent' }}>
-                    <div className="container ">
+                    <div className="container tw-w-full !tw-px-1 sm:!tw-px-4 md:!tw-px-8">
                         <div className="about-w">
                             <div id="learn-more" className="about-s">
                                 <div className="unit-96"></div>
